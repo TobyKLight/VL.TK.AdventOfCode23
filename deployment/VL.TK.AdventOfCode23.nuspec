@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.TK.AdventOfCode23</id>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <title>VL.TK.AdventOfCode23</title>
     <authors>TobyKLight</authors>
     <owners>TobyKLight</owners>
     <projectUrl>https://github.com/TobyKLight/VL.TK.AdventOfCode23</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Solutions to AdventOfCode23 in vvvv gamma</summary>
-    <description></description>
+    <description>Happy Holidays!</description>
     <tags>VL, vvvv, advent of code 2023</tags>
 	<license type="expression">CC0-1.0</license>
 	<dependencies>
