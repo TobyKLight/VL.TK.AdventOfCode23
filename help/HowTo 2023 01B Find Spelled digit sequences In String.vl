@@ -1,0 +1,1114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="H9DvkbMGj6BPFUHhU9k4Kl" LanguageVersion="2024.6.6" Version="0.128">
+  <NugetDependency Id="OHHXXqYMwFwNp7ESTJbKjc" Location="VL.CoreLib" Version="2024.6.6" />
+  <Patch Id="NVYJstYMDFKPMnW1pqjfpN">
+    <Canvas Id="GMhGJBRCFAZPWosKYj1QPt" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="QE10CmIuaQ0Lkjm32OrErL">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="UNz2dspUVNdPF3yfYOQ3go">
+        <Canvas Id="JJtHWXpmulZO62VWewoOmh" CanvasType="Group">
+          <Pad Id="As8gGYizzrPN3mo9fSPd9V" Comment="ex2" Bounds="102,45,145,127" ShowValueBox="true" isIOBox="true" Value="two1nine&#xD;&#xA;eightwothree&#xD;&#xA;abcone2threexyz&#xD;&#xA;xtwone3four&#xD;&#xA;4nineeightseven2&#xD;&#xA;zoneight234&#xD;&#xA;7pqrstsixteen">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <!--
+
+    ************************ FindDigitsInLine ************************
+
+-->
+          <Node Name="FindDigitsInLine" Bounds="370,488,367,246" Id="CKMoqT58poeMELnR4x5EBN">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="CbQeiJLDsKuMRhnnq58gPH">
+              <Pin Id="LksxFLsKAWlNmisyCOqoZI" Name="String" Kind="InputPin" />
+              <ControlPoint Id="Cu6ZXYPLbhLMiBHTTjTM7H" Bounds="446,506" />
+              <Link Id="RxEwBY9ILqaLE2Iny7UULk" Ids="LksxFLsKAWlNmisyCOqoZI,Cu6ZXYPLbhLMiBHTTjTM7H" IsHidden="true" />
+              <Node Bounds="444,552,77,19" Id="ORfq2ksCB4ENoUsISBYlIF">
+                <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 2023 01A Find Numerics In String.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="FindFirstDigit" />
+                </p:NodeReference>
+                <Pin Id="DzC34N9gBjWQFBZpUDls9X" Name="String" Kind="InputPin" />
+                <Pin Id="I0CG7MbhDmcLUQKSXcvWzD" Name="DigitChars" Kind="InputPin" />
+                <Pin Id="I20dRKw0ssIOTRLPgORzqV" Name="CharFound" Kind="OutputPin" />
+              </Node>
+              <Link Id="NnU91kS1bEyO1m9ao7pQ7u" Ids="Cu6ZXYPLbhLMiBHTTjTM7H,DzC34N9gBjWQFBZpUDls9X" />
+              <Pin Id="L9TsIF9sKV1N6QP0XZox6b" Name="DigitChars" Kind="InputPin" />
+              <ControlPoint Id="As8btwyuBHhNoeURPEnrGU" Bounds="519,510" />
+              <Link Id="Hk3TBdSYUi4MZB2ppa2GbM" Ids="L9TsIF9sKV1N6QP0XZox6b,As8btwyuBHhNoeURPEnrGU" IsHidden="true" />
+              <Link Id="DnQFQxN1XWVPitotbKcW8Y" Ids="As8btwyuBHhNoeURPEnrGU,I0CG7MbhDmcLUQKSXcvWzD" />
+              <ControlPoint Id="OLGYwOdgRQYOuZhpg8tGFL" Bounds="595,506" />
+              <Link Id="I8xuAoMAmMLMzXsNqAoyCz" Ids="LksxFLsKAWlNmisyCOqoZI,OLGYwOdgRQYOuZhpg8tGFL" IsHidden="true" />
+              <ControlPoint Id="BSvsQQtk7G1NK2ropDd54U" Bounds="666,509" />
+              <Link Id="QlZvbiN5rjSMKEQCxlezkw" Ids="L9TsIF9sKV1N6QP0XZox6b,BSvsQQtk7G1NK2ropDd54U" IsHidden="true" />
+              <Node Bounds="593,544,51,19" Id="LVj1ADmMGlhNccJCjbkBL3">
+                <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="Collections.Sequence" />
+                  <Choice Kind="OperationCallFlag" Name="Reverse" />
+                </p:NodeReference>
+                <Pin Id="Mb3VDr0e42pQX6w5FeVARI" Name="Input" Kind="InputPin" />
+                <Pin Id="BIAB9GnaaiGO4WY0HDQg62" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="NjW6XhLymD1N3n2oHBBR0y" Ids="OLGYwOdgRQYOuZhpg8tGFL,Mb3VDr0e42pQX6w5FeVARI" />
+              <Node Bounds="593,566,77,19" Id="LPAbD9Rd3bgOX1vlxFH85R">
+                <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 2023 01A Find Numerics In String.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="FindFirstDigit" />
+                </p:NodeReference>
+                <Pin Id="SLsufmTinGUO3p67TufCx7" Name="String" Kind="InputPin" />
+                <Pin Id="BSyvdVbfWU8MoojpvHJof2" Name="DigitChars" Kind="InputPin" />
+                <Pin Id="Vt1OJYllxRDLxOShDVaeW1" Name="CharFound" Kind="OutputPin" />
+              </Node>
+              <Link Id="MREbR1KdJR0L0CwK2jUkfa" Ids="BIAB9GnaaiGO4WY0HDQg62,SLsufmTinGUO3p67TufCx7" />
+              <Link Id="LeUWYevjzm2OfiyWI23RcB" Ids="BSvsQQtk7G1NK2ropDd54U,BSyvdVbfWU8MoojpvHJof2" />
+              <Node Bounds="444,591,55,19" Id="HfsNT2gZSqjPlWxuyDho9H">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ToString" />
+                </p:NodeReference>
+                <Pin Id="OSKxngy5E8eO79gJk0GC0e" Name="Input" Kind="InputPin" />
+                <Pin Id="KZY3oWw6fL5Pv8XaU4ePpk" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Link Id="LWgjjTSDjDaPxUEHey7HXg" Ids="I20dRKw0ssIOTRLPgORzqV,OSKxngy5E8eO79gJk0GC0e" />
+              <Node Bounds="593,591,55,19" Id="OXScf1TUjIaNaEHAV1VUzR">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ToString" />
+                </p:NodeReference>
+                <Pin Id="I3GAaYfPecSNqbQgyZoVjO" Name="Input" Kind="InputPin" />
+                <Pin Id="CwBDUhh2Yt6PBMnuxbdiHz" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Link Id="HDFRkgNz4boN4KlauYF2LI" Ids="Vt1OJYllxRDLxOShDVaeW1,I3GAaYfPecSNqbQgyZoVjO" />
+              <Node Bounds="444,635,25,19" Id="BWHLlhDdZYlNTGL6IGoM14">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="+" />
+                </p:NodeReference>
+                <Pin Id="MUKdm98bbjcQRDlfrxHBLr" Name="Input" Kind="InputPin" />
+                <Pin Id="UzqK9cENATXLYI69Nz6jGQ" Name="Input 2" Kind="InputPin" />
+                <Pin Id="LeDCA2bZScJNacRNZKY5V5" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="MLoS0UbklKxQABAzJzkv10" Ids="CwBDUhh2Yt6PBMnuxbdiHz,UzqK9cENATXLYI69Nz6jGQ" />
+              <Link Id="R3qHFIU9Y9DPEYjMawZq03" Ids="KZY3oWw6fL5Pv8XaU4ePpk,MUKdm98bbjcQRDlfrxHBLr" />
+              <Node Bounds="444,661,55,19" Id="BOygKLBvRmfOcunCtRF281">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="TryParse" />
+                </p:NodeReference>
+                <Pin Id="Np4MBQGlwMpNPqOJzrUKaU" Name="String" Kind="InputPin" />
+                <Pin Id="VVUUjEpkVVwPZVm5gZoPq8" Name="Value" Kind="OutputPin" />
+                <Pin Id="PbjehXmZMM4MEAocghqOT4" Name="Success" Kind="OutputPin" />
+              </Node>
+              <Link Id="DS23FFrVzqnNm1bGNwAffZ" Ids="LeDCA2bZScJNacRNZKY5V5,Np4MBQGlwMpNPqOJzrUKaU" />
+              <Pad Id="BRun2sUsqFMOS8I7FDQK0I" Comment="" Bounds="446,702,35,15" ShowValueBox="true" isIOBox="true">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="RwIkE9yDPK2NWuoQtTt7aD" Ids="VVUUjEpkVVwPZVm5gZoPq8,BRun2sUsqFMOS8I7FDQK0I" />
+              <ControlPoint Id="QYdXOzURgSOOwQwprZ1AIl" Bounds="446,717" />
+              <Link Id="UxcrGLa9izOLHTaKFPCvaB" Ids="BRun2sUsqFMOS8I7FDQK0I,QYdXOzURgSOOwQwprZ1AIl" />
+              <Pin Id="JrMwNv1Vk8qLQRSsNqDs9V" Name="Output" Kind="OutputPin" />
+              <Link Id="UjFvDN0fLRXQFVmlD1KnqS" Ids="QYdXOzURgSOOwQwprZ1AIl,JrMwNv1Vk8qLQRSsNqDs9V" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ FindFirstDigit ************************
+
+-->
+          <Node Name="FindFirstDigit" Bounds="784,493,297,209" Id="AqDud3zikqNLnAu4xlTmBt">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="FlhLybaeCtHMKfxLJZ01Hy">
+              <Pin Id="MWZNDp9ypufMOvLMEls5tc" Name="String" Kind="InputPin" />
+              <ControlPoint Id="DFPV5UgpBNtMj4gaYV8LmW" Bounds="893,511" />
+              <Link Id="CqfRgqdxrtuMh7uLWliRaF" Ids="MWZNDp9ypufMOvLMEls5tc,DFPV5UgpBNtMj4gaYV8LmW" IsHidden="true" />
+              <Node Bounds="879,547,146,110" Id="E2LcnswCWsaNJdlJ5JXdLK">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="PRGf4p1b678MLE3X6mnps2" Name="Break" Kind="OutputPin" />
+                <Patch Id="G1GNrODHt2PPamyxUR4WTq" ManuallySortedPins="true">
+                  <Patch Id="M4U8gHwBHtzLk7oUUaQj5j" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="KQZDqY187QIPefp55LfGMN" Name="Update" ManuallySortedPins="true">
+                    <Pin Id="CqqSQno5AKIQJxoOeNTdIE" Name="Break" Kind="OutputPin" />
+                  </Patch>
+                  <Patch Id="RUytmDr5OGQNNcMA83LHDS" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="939,578,71,26" Id="HGIxtIB9lLePLlkLw6In1y">
+                    <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="4026531840" Name="HashSet" />
+                      <Choice Kind="OperationCallFlag" Name="TryGetValue" />
+                    </p:NodeReference>
+                    <Pin Id="SmKSSxAg3teLwnmwLvL88W" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="KBa2NX5PCHTPpMqSOiuihY" Name="Equal Value" Kind="InputPin" />
+                    <Pin Id="Set8fKLwBfWPe4UCcM0iDM" Name="Output" Kind="OutputPin" IsHidden="true" />
+                    <Pin Id="JWjDWcvsesTNzGuzt686au" Name="Result" Kind="OutputPin" />
+                    <Pin Id="A6mbhzZiq89PkwCYb2a4Qf" Name="Actual Value" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="NZuv0tMZ8zlOqsYhhbnPVK" Bounds="942,640" />
+                </Patch>
+                <ControlPoint Id="GoNlVfEISVGO8EZO4Z9ALm" Bounds="893,553" Alignment="Top" />
+                <ControlPoint Id="CTCELWGTIFtLE7dpddmej9" Bounds="1008,651" Alignment="Bottom" />
+                <ControlPoint Id="Mwhat2c4R3wNc95cIRSb1b" Bounds="1008,553" Alignment="Top" />
+              </Node>
+              <Link Id="IyZ31HOpvppQb2TDzmZ5dy" Ids="DFPV5UgpBNtMj4gaYV8LmW,GoNlVfEISVGO8EZO4Z9ALm" />
+              <Pin Id="ImRELscBKt8NWROeJiXmIL" Name="DigitChars" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="HashSet" />
+                  <p:TypeArguments>
+                    <TypeReference>
+                      <Choice Kind="TypeFlag" Name="Char" />
+                    </TypeReference>
+                  </p:TypeArguments>
+                </p:TypeAnnotation>
+              </Pin>
+              <ControlPoint Id="PxDHiCF3hONOpJUPl3DP4g" Bounds="940,527" />
+              <Link Id="T1i4rzbsVJVOpg50HznccB" Ids="ImRELscBKt8NWROeJiXmIL,PxDHiCF3hONOpJUPl3DP4g" IsHidden="true" />
+              <Link Id="JpBfp8V8HSeNzLBdzN1qqT" Ids="NZuv0tMZ8zlOqsYhhbnPVK,CqqSQno5AKIQJxoOeNTdIE" IsHidden="true" />
+              <Link Id="SKViGwfwDZ6OzVE7GohS68" Ids="PxDHiCF3hONOpJUPl3DP4g,SmKSSxAg3teLwnmwLvL88W" />
+              <Link Id="GPS4nMv0Wq5OzuxLOX8C4o" Ids="GoNlVfEISVGO8EZO4Z9ALm,KBa2NX5PCHTPpMqSOiuihY" />
+              <Link Id="GL6ul8NV2OkMKCSdk39mcO" Ids="JWjDWcvsesTNzGuzt686au,NZuv0tMZ8zlOqsYhhbnPVK" />
+              <Link Id="GhXNjB4fxsxMBFWMzkPrDU" Ids="Mwhat2c4R3wNc95cIRSb1b,CTCELWGTIFtLE7dpddmej9" IsFeedback="true" />
+              <Link Id="F2rFmI53QdiPpeOkRbcs9t" Ids="A6mbhzZiq89PkwCYb2a4Qf,CTCELWGTIFtLE7dpddmej9" />
+              <Pad Id="DmyqFDQX5d6QUdqa2fzHEd" Comment="" Bounds="1008,669,20,15" ShowValueBox="true" isIOBox="true" />
+              <Link Id="HbHByUE27NnLgGB7g0jHPx" Ids="CTCELWGTIFtLE7dpddmej9,DmyqFDQX5d6QUdqa2fzHEd" />
+              <ControlPoint Id="JdI3Gck2pncMPE5gIMx2mJ" Bounds="1008,685" />
+              <Link Id="Vz7jO9ttUA0LtZrD7q6R3V" Ids="DmyqFDQX5d6QUdqa2fzHEd,JdI3Gck2pncMPE5gIMx2mJ" />
+              <Pin Id="Nkc3mY2kjjBN9jBzTwxPhV" Name="CharFound" Kind="OutputPin" />
+              <Link Id="PX4jRohnXJoPsHnnP3tpAJ" Ids="JdI3Gck2pncMPE5gIMx2mJ,Nkc3mY2kjjBN9jBzTwxPhV" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Node Bounds="350,339,83,26" Id="FuNvkvtQKRPLuzxwAtCzJq">
+            <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="HashSet" />
+              <Choice Kind="OperationCallFlag" Name="FromSequence" />
+            </p:NodeReference>
+            <Pin Id="Awj8xRsdyjVQQhKmIHeklY" Name="Input" Kind="StateInputPin" />
+            <Pin Id="DLocBm1sxhRP5yirsAjaaN" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PBpJnH8epWiNAMVOEyVsLf" Comment="" Bounds="351,157,35,172" ShowValueBox="true" isIOBox="true" Value="0, 1, 2, 3, 4, 5, 6, 7, 8, 9">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="ImmutableTypeFlag" Name="Char" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">10</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FJJCPODdZbZPfdi2pdqmBM" SlotId="OlN45QiU8CaNBuf88doGFK" Bounds="352,383" />
+          <Pad Id="ELDrGiAH69XMhJB1ktrsxk" Comment="sum" Bounds="230,727,59,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="74,293,246,408" Id="V6ypgotIv3tM873BAazP3c">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+            </p:NodeReference>
+            <Pin Id="MFCmhZA22g5NRJ4ESnDDeU" Name="Force" Kind="InputPin" />
+            <Pin Id="L5qCiZqcIU0QX7Sfn28jBj" Name="Dispose Cached Outputs" Kind="InputPin" />
+            <Pin Id="P66cb29jJaiN8sFLG093G3" Name="Has Changed" Kind="OutputPin" />
+            <Patch Id="DujP2gdyJceOqfAfgdeSWR" ManuallySortedPins="true">
+              <Patch Id="SjO5sqBjQ9IMp3iqzyhzLV" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="OgNy66j9gFINDfWYR0g7sV" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="126,431,182,250" Id="GjDpmFpSDHvNFemhQJ54QZ">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="FEpqWqPya61LiGOCjjtBof" Name="Break" Kind="OutputPin" />
+                <Patch Id="DqWmeGQG9kEPVJMjpE3RFI" ManuallySortedPins="true">
+                  <Patch Id="I63EzHiILquOP9Y5phiK7a" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="PvCMVinyo0qPPIp1Taz3CA" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="IGSiHBufdysP921sJSCmLV" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="139,585,89,19" Id="JvA4YYo4m9tLkSCv27uYhA">
+                    <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 2023 01A Find Numerics In String.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FindDigitsInLine" />
+                    </p:NodeReference>
+                    <Pin Id="Ajwu6SqM8orMUbCZzpynMB" Name="String" Kind="InputPin" />
+                    <Pin Id="ABcxjHc3VKlPCBNhUlT6Xa" Name="DigitChars" Kind="InputPin" />
+                    <Pin Id="FWB6SuE0W35ODr44vSlFdy" Name="Output" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="228,642,25,19" Id="SMN1iGVaipWM6Vh1pH9dei">
+                    <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="+" />
+                    </p:NodeReference>
+                    <Pin Id="SmiTydDS7R2NOAkMuSS136" Name="Input" Kind="InputPin" />
+                    <Pin Id="CiFuSPZbOf0MUKG3gt9OAj" Name="Input 2" Kind="InputPin" />
+                    <Pin Id="PvGJiZOHSvRP03xEzBWYzZ" Name="Output" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="140,487,156,19" Id="QE7O2kFBzdxLTr2InJMqGe">
+                    <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 2023 01B Find Numerics In String.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ReplaceStringNumberWithDigit" />
+                    </p:NodeReference>
+                    <Pin Id="EOqO1SmZEK5MDJFWsbe1ya" Name="Input" Kind="InputPin" />
+                    <Pin Id="Miu8SMd7PhWNP35M6JLRVw" Name="Output" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="V67SwTjUR9IMwkq9ohPreK" Comment="" Bounds="164,529,44,15" ShowValueBox="true" isIOBox="true" />
+                </Patch>
+                <ControlPoint Id="JwNjPGwQoPCNY6zbyy6IQk" Bounds="140,437" Alignment="Top" />
+                <ControlPoint Id="GXsYJfpVRsWNtgRvbjq5sc" Bounds="249,437" Alignment="Top" />
+                <ControlPoint Id="ITeEag99eixOhIodFCzCs0" Bounds="230,675" Alignment="Bottom" />
+                <ControlPoint Id="REhqeZ0IjFrOXdVs4wFOV7" Bounds="140,675" Alignment="Bottom" />
+              </Node>
+              <Node Bounds="139,316,71,19" Id="DeNQUOuKo9KOYZaH1qoVZd">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="SplitToLines" />
+                </p:NodeReference>
+                <Pin Id="Op2SyQUwbGiMoQYN7eHMtg" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OLs0fR6UyYJNIxRMSjik4Q" Name="Remove Empty Lines" Kind="InputPin" />
+                <Pin Id="PhZ7Ujre83lMTkkLG2mSTJ" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="153,349,44,26" Id="PJsQQPBRG8HOiC2TD3mseE">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Count" />
+                </p:NodeReference>
+                <Pin Id="Km1VI7XKBpbK95bPB7Kh4e" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OYQG64j8Qh5MsIOQyqtXth" Name="Count" Kind="OutputPin" />
+              </Node>
+              <Pad Id="NaX8NIKITuxOmUIANe57Fx" Comment="Count" Bounds="210,352,35,15" ShowValueBox="true" isIOBox="true" />
+            </Patch>
+            <ControlPoint Id="KSa0MtCCnNQPoF4CKzK1W5" Bounds="230,695" Alignment="Bottom" />
+            <ControlPoint Id="TBQYC81rMZXLe4a25efjEA" Bounds="141,299" Alignment="Top" />
+            <ControlPoint Id="SqmkSsgmUNHPQjMvN1qs5z" Bounds="127,695" Alignment="Bottom" />
+          </Node>
+          <Pad Id="JDtr83Sf7CUPEj3hRrBzTv" Comment="puzzleinput" Bounds="453,43,108,75" ShowValueBox="true" isIOBox="true" Value="two934seven1&#xD;&#xA;8825eightknfv&#xD;&#xA;sevenoneqbfzntsix55&#xD;&#xA;foursqpqvv192rdrbtcccfourone&#xD;&#xA;9jpzhpxqthreelmrnlhfqmn4&#xD;&#xA;onedpsckg3xdhmgtsixthreefivejlncszkxeight&#xD;&#xA;4twofour&#xD;&#xA;7eighttwo17fournsmrznntgjrdpkdjvx&#xD;&#xA;573&#xD;&#xA;ninethree3&#xD;&#xA;3gngzkpkgrf&#xD;&#xA;qeightwo2xjvfkfiveone&#xD;&#xA;twoonej26&#xD;&#xA;sgoneightfoureight5sevenjzsqghg&#xD;&#xA;bnrb36xtjd7four9&#xD;&#xA;threepprhsff3prbpfivesevenseven4&#xD;&#xA;38sevennineninemnfzklttkxnine3&#xD;&#xA;8mllzkfqklhonefivemv4&#xD;&#xA;onedcqlqcrzn66three&#xD;&#xA;1fourjthreefc2gbtbdzsix&#xD;&#xA;eight7two4258&#xD;&#xA;4hmfzdzf&#xD;&#xA;26dsmdzznm7&#xD;&#xA;plckvxznnineh34eight2&#xD;&#xA;dhrvd4eightgxznhqmh&#xD;&#xA;5fxhhkghvm3nineshpcxhtwo6fourhrktpbq&#xD;&#xA;qklhmhmdlgeighttwoonetwo52five&#xD;&#xA;86threemmpchhzdvsvxfzrj&#xD;&#xA;9clvchpgrslnkhdmfkjmlrvgnf&#xD;&#xA;8ncpdtspfivethree&#xD;&#xA;gtbtkqcgvh8945&#xD;&#xA;sevencrkbt3btljpdpgstlf&#xD;&#xA;8nine37bpkmtghhnc2hnreightwohvs&#xD;&#xA;5qxmsrthreempcmpdcnnv41&#xD;&#xA;8threezrxhxgx4g&#xD;&#xA;jhsb3onep1&#xD;&#xA;eight71rnz&#xD;&#xA;7p16lrxktlr6&#xD;&#xA;8one5fivelvdbjzz&#xD;&#xA;1nine2twodhnineonesixkqfcbgdlfg&#xD;&#xA;four8sixfourfive&#xD;&#xA;pjdmt4one8sdsdhhqxlqgzpk6qrtdvxm&#xD;&#xA;sixzfourkdpmnn92qbjkjqfqpn&#xD;&#xA;42threefiveh&#xD;&#xA;5fhgzt8threemzhblb6&#xD;&#xA;bbc3kxhvbfrn8four6five&#xD;&#xA;91fknhthreefour&#xD;&#xA;six9fttmqpninethreevhgtrxklbvxbljsp1&#xD;&#xA;four5five1471mtfv&#xD;&#xA;3bjkggcntwo3ptmjhmthree7&#xD;&#xA;four2eightone&#xD;&#xA;threedrzktlgbz4five&#xD;&#xA;dmpgttqfivekcdjbf49six&#xD;&#xA;9bplkkgrxgjqjqb3seven&#xD;&#xA;4861sx4six&#xD;&#xA;hjzmxtxvxkkpbvgpvmgb4two8bqxlvponesq&#xD;&#xA;lkxxtkctlphjfivepjlrg1&#xD;&#xA;xszdbbvxjrfxs2vrmmbfourpzcfmgppk33eightwors&#xD;&#xA;966fourflbfsk3&#xD;&#xA;1bskshtjseven5qlbjhqgzhbzxvlxsvtcmmzseven&#xD;&#xA;56two28cbhfsdcjsix2four&#xD;&#xA;6s5qcmvjltqeightslhnzmvbfvcmxj&#xD;&#xA;twosevenjxk6lhrkknnkq&#xD;&#xA;kjkj2lkkldqbgzhglmthree9&#xD;&#xA;ftxhnpms1onetwoxg2&#xD;&#xA;three9sixsevenmrgggztckzgzv7&#xD;&#xA;stvgmjgnine2vvsnjhlzkstwo5szsbvzjdzb&#xD;&#xA;v6&#xD;&#xA;threetwolscvhrlmm3r&#xD;&#xA;two17kblkphfninefour6six1&#xD;&#xA;one6fiveeight9sixjzljjfknrhkzxr&#xD;&#xA;dgpqm43xthreekxgspjzrzcsix&#xD;&#xA;2two8fourpppb2&#xD;&#xA;fiveseven5four&#xD;&#xA;5rttwofivefnmbkn8nine2eight&#xD;&#xA;43threeninelgnpzrdtbc1lbkjkvqrdcd&#xD;&#xA;1seventx&#xD;&#xA;nctwonefourjzgskmxjmq2&#xD;&#xA;rpzpht2tdxczzfthreeseven&#xD;&#xA;two1seven&#xD;&#xA;6bjztkxhsixkgnkroneightht&#xD;&#xA;9mqzkgmv4vxqrpf4&#xD;&#xA;49hlj&#xD;&#xA;46gv&#xD;&#xA;75sixfddn75&#xD;&#xA;eight87xzjkdpnnjjfqeight&#xD;&#xA;9pfcdhxbcrnpsnmvkqnsqsninedgtlmmc5&#xD;&#xA;xmfbn34&#xD;&#xA;99lvrrndpqcnhznn&#xD;&#xA;qsmxhxfph24three&#xD;&#xA;lql25&#xD;&#xA;8five1dhrkm&#xD;&#xA;twoninefourcxksqfmn1&#xD;&#xA;7eightdclrvn&#xD;&#xA;one2seveneight3ninemcpnmonetwo&#xD;&#xA;33fivefivenftbczsdstlxzbp&#xD;&#xA;9r97five&#xD;&#xA;5fivessskxvnt6qqbkkqrggxg9gsdtbptpn&#xD;&#xA;threesjdpjdkczjgthree6&#xD;&#xA;twojqm86&#xD;&#xA;bttrx15qfznmdncnz5&#xD;&#xA;ppckphrtzhstd3xvthzrxxlrrjtk&#xD;&#xA;qkm6ckeight7gnmqkltz6jsrgjhbck&#xD;&#xA;zdjjjlpmjtphbjpm9threeskqrphxbfqqeightone&#xD;&#xA;konesix1three&#xD;&#xA;four24391rzxtffour&#xD;&#xA;hsevenfive36fqrbjpfj7&#xD;&#xA;dxdcssixbcnp8two639&#xD;&#xA;hnvg2&#xD;&#xA;sixeighthmqkjjsix6tbvdhzone2vsn&#xD;&#xA;dfzlxq7pjmq5&#xD;&#xA;5n3&#xD;&#xA;twovjcgxdsdngt2smfxfqxeight&#xD;&#xA;ftpjlnvg5qshclfzqtc2eightninefivecsrgk&#xD;&#xA;zzgsjsjffpvcgfmjtnpkrsqlmpzlt9four&#xD;&#xA;4btrhpznzr8oneightg&#xD;&#xA;pph2one&#xD;&#xA;5seveneighteight&#xD;&#xA;31sfrfrcgmseven&#xD;&#xA;four7bdqgrhfive3&#xD;&#xA;nbrzbggpseven9prthjvknq&#xD;&#xA;3sixonefourh&#xD;&#xA;fourgkrpkzdmhtwoseven6txplz&#xD;&#xA;four84ldbhnkxjph&#xD;&#xA;6eightonesrb&#xD;&#xA;gnmckftk62jgsjxzpk&#xD;&#xA;bzctx9onetmcnzhxkrtchjgqxv66&#xD;&#xA;1three5&#xD;&#xA;27two&#xD;&#xA;34eightwox&#xD;&#xA;6ndgrbmfkfive2ksxfbnjbl7fkrm&#xD;&#xA;kxpz4gjmgcgzzq63five&#xD;&#xA;nfvmfrbc151one8nggsdqvm&#xD;&#xA;4clnctseven5nsn5&#xD;&#xA;hcrpbvqmmdbstlxccthkththreebm6&#xD;&#xA;gdnmh6cslzhjhdl8nine&#xD;&#xA;sevenninethreefive4bgknpbnine&#xD;&#xA;2sevent6three1&#xD;&#xA;2jbrmdxgpnine7&#xD;&#xA;nshlgtbkmcmgkmqone3&#xD;&#xA;dklhc9sevenrxxzzxltsnlltqcjrbgprnx&#xD;&#xA;gmrjhlvzppmklnl39&#xD;&#xA;kv86eight3dcdpp6pmdzcvsix&#xD;&#xA;fiveseven2sevensix6952&#xD;&#xA;3xrtthnsevenjxsxpzvc&#xD;&#xA;256nmzrlzbczv&#xD;&#xA;4dp7onesixvpcf&#xD;&#xA;25onesevenonexvnst4smvlfszcrv&#xD;&#xA;lcxncproneseven37five&#xD;&#xA;ninezjsrptfivenhsqxrdz7one&#xD;&#xA;cscdmnfrcxfqdtkmhkldgjlxdjqsxslhdzvvt4&#xD;&#xA;sixfnjnfkqm67blkmnqtwo&#xD;&#xA;fivethree7&#xD;&#xA;2five5ninegcmqbkpp61npkpml9&#xD;&#xA;3qktrxninefour&#xD;&#xA;qdhmxstwo44two&#xD;&#xA;21nine&#xD;&#xA;rbnineone3xppvtbmv3sevenvxkkgmgklg&#xD;&#xA;mcvzplmpvptwo38&#xD;&#xA;sv176threeone&#xD;&#xA;5vksixqsccgdkrrfourcgnpsfxbvj&#xD;&#xA;xxtwone6eight&#xD;&#xA;threeonespkbnsj9onesevenpz5&#xD;&#xA;fivenncrfvhfdsevengxzkxbkrklgsfvllrkbx4&#xD;&#xA;69kp1seven8dqkrx&#xD;&#xA;dmb9ccghdjjpjxfivehtwo4&#xD;&#xA;6nhgdkpdone&#xD;&#xA;tfvqdqdqcszxbrdmmrninesct2&#xD;&#xA;8sevenfour2eight8rskc&#xD;&#xA;cpmgffcvln9sjdsgfivesix5rppfsfmmqtffive&#xD;&#xA;5two7&#xD;&#xA;7threecrkljthreetwo&#xD;&#xA;6qgqzsdhprd&#xD;&#xA;959zgjscgtm&#xD;&#xA;fourtwoppfrdqgtseven9&#xD;&#xA;8bbchvoneeightr&#xD;&#xA;gtddrb1rznsdjtonethree5four&#xD;&#xA;8rrskfzlmlbrsninezdzpt3&#xD;&#xA;6njhmkpp4onefive8two&#xD;&#xA;4cqpnkcxjtwoqzqmjnqccfs256hcnqpfm&#xD;&#xA;nineeightseven62sixhlxlps&#xD;&#xA;dtqplzzf87threecthree&#xD;&#xA;mqptgzjxddxgxpjr5&#xD;&#xA;9194jbjjktwofive&#xD;&#xA;five514foursevendzxlh2&#xD;&#xA;6nineeight85zvx&#xD;&#xA;four8gsgrstfmdv99hpkfgptzqkhsmgsnlggrseven&#xD;&#xA;9three298&#xD;&#xA;3fpttzk35&#xD;&#xA;rbtckzonexkqmfxrnsbsrkqbq66sixkcqfzjfour&#xD;&#xA;sixkdcrrrppcsix399fccnsbhfxvfiveft&#xD;&#xA;xfjxbfvmbxbf3twokkcfrbcfbmkmhghsbzf&#xD;&#xA;9sixonesix3lqqf9&#xD;&#xA;eight3fourgcmp&#xD;&#xA;xjccxkhkvgltzqslmseven5twoqhcmpsixeightnine&#xD;&#xA;62eight8&#xD;&#xA;hzhccdkxb336&#xD;&#xA;gcsbmkdfmqvxtfj81&#xD;&#xA;two445nine&#xD;&#xA;xhrkgql8six41nine1&#xD;&#xA;5dnlcsjb&#xD;&#xA;jdqdg8gtgrctwo4fourthree&#xD;&#xA;five4five&#xD;&#xA;3threecggvthjv6&#xD;&#xA;sevenzrjzqhgtvtqvkp3three5sixhxdmfour&#xD;&#xA;2249eight6&#xD;&#xA;drt5trhdjqf3fourfourkfour4&#xD;&#xA;5oneone1&#xD;&#xA;threeseven5six&#xD;&#xA;45bclsgsqx&#xD;&#xA;6ggfjqls&#xD;&#xA;rhpmhfournrzg418onevlkcxxdrd&#xD;&#xA;fcvgszpsixthreegqqctvdqnfrbnlbmknlvgfour1&#xD;&#xA;twoxvrhmxjbbn2eight&#xD;&#xA;27eighteightsevensix6six&#xD;&#xA;veightwosix54bcvvtcgbqfzprp7four2&#xD;&#xA;9kthreeqntgvbb34693&#xD;&#xA;zxcdmfg48ftlhk&#xD;&#xA;1mhcctbmbzmfivefourtwo3&#xD;&#xA;two6vxsdfhgstslsix&#xD;&#xA;threesixmzhvfqsix5xhrhrvsfh7kpcrsp&#xD;&#xA;oneggkztrmsgrthree536three&#xD;&#xA;7seveneight81ronesix&#xD;&#xA;sixllrjlqtffqvtdjqhctt66four3twoone&#xD;&#xA;2zxqpgmgz&#xD;&#xA;7rfngpqkqgfivetwojf&#xD;&#xA;vvbfnnine3ngv&#xD;&#xA;59sixninelmhmqchlthkbpthree33&#xD;&#xA;1three6seven1seven5qntpbnsfour&#xD;&#xA;7nfzfsdxzfive8fjvllc4&#xD;&#xA;56seven5seven&#xD;&#xA;1fivegqbrdgths&#xD;&#xA;four32vmhvnk&#xD;&#xA;hvdjnmpqvqbnrcrclkgkrfseven6lgrvthv&#xD;&#xA;28xngctrvmnc4ntvxhmxfsj13&#xD;&#xA;onep1onecjjmxxtd&#xD;&#xA;9eightwof&#xD;&#xA;hzgmtfdj8nine7seven&#xD;&#xA;eightseven3&#xD;&#xA;fivepnhlninefive1lcftks&#xD;&#xA;122ninelrgmdgmqzd&#xD;&#xA;zjsix3&#xD;&#xA;7rffvg9hbjpx&#xD;&#xA;3h76&#xD;&#xA;fouronessbhxlcclkzmnnbksixlcdqtf3&#xD;&#xA;4fivesix228five&#xD;&#xA;sixrlthree1bzhddfbkrgxpgxfivef&#xD;&#xA;dxgqnkqfgq8&#xD;&#xA;onemcfourbmkhh5px&#xD;&#xA;fmtqjcbxznine3three&#xD;&#xA;qzkcxvnffg1gmhplhlffgtwo3onevg7five&#xD;&#xA;twokj7xv63six&#xD;&#xA;four58&#xD;&#xA;fvjeightwosixrbrgnmrrmdtwomseven69seven&#xD;&#xA;5fivefour&#xD;&#xA;6pg8twomrqfzkxrthree9&#xD;&#xA;7xqtqfrpprlvhnthree&#xD;&#xA;l35sevencreight4&#xD;&#xA;threechpctdgtq8fxspqtnvggkxtmeighteighthdgngnmc&#xD;&#xA;one16twosix&#xD;&#xA;threetwofour3eight1pvgcthree&#xD;&#xA;229&#xD;&#xA;ngcnthreeone7hqbbntqxeightkgtc&#xD;&#xA;qtgkz1ntone68&#xD;&#xA;nine2seven&#xD;&#xA;two1jjccnlrqlsdfvtgjmmhh5prfpcc&#xD;&#xA;onesixvtbjgdqmtg1eight&#xD;&#xA;77qkvdszsp9ctqndxzrjc&#xD;&#xA;rnldvcmks74355&#xD;&#xA;fourkljgznpqntwofoureightlc3zmljfnqnr&#xD;&#xA;8threetbv6cdjjbtmmxcfour4qlqjql&#xD;&#xA;jfkvbvjxjzk7&#xD;&#xA;7eight8vhsdrd&#xD;&#xA;onezdgffrmz2&#xD;&#xA;eightseven8&#xD;&#xA;7gjdsevenjsdkljn2fv&#xD;&#xA;kmst4&#xD;&#xA;3five8smctrhdhfninelzbrszmbdm&#xD;&#xA;fiveseven4ninevdfive3&#xD;&#xA;8jg6nine4jmmsbpbnskoneqxgjrphhf&#xD;&#xA;mgfourfour3hgmrzkntjm2hxrrfsghnone&#xD;&#xA;ninecqmg72&#xD;&#xA;ldthtljblpl3fiveonervtxnxczfx2&#xD;&#xA;9sevencsevennscmbjgthree&#xD;&#xA;7lnj9four&#xD;&#xA;fgtwonexmkvkcgpq36sixsmfnxjs&#xD;&#xA;qgmfmnh6twoeight&#xD;&#xA;56sqrseven&#xD;&#xA;183877&#xD;&#xA;ntt1seveneight513&#xD;&#xA;7three6dzdrs&#xD;&#xA;8sixsevenfour&#xD;&#xA;mzfhdnhseven4eightvjsdnxlonenfzlcxr&#xD;&#xA;sixzdczsbtq29one4eight6&#xD;&#xA;jmxcbmktjzeight5fivenhtzfsdqbx&#xD;&#xA;four2rvlppone258&#xD;&#xA;fivezvlqr236nine&#xD;&#xA;262&#xD;&#xA;58six2nineone5&#xD;&#xA;twoeighttwo3ktzhmdvlx&#xD;&#xA;64nsjgqsqkhfqmfk&#xD;&#xA;foursx18&#xD;&#xA;gklzjvvv93zzmzgpn&#xD;&#xA;onenmcvr6&#xD;&#xA;qsnmlbmlr6&#xD;&#xA;sbtwonesevenfourhgltwofzhzmbsrfm6two&#xD;&#xA;8fdhxeighttpcjkkmgsgnpnvsix2eighttwo&#xD;&#xA;5pvxnxxdfourfour75&#xD;&#xA;85vtsgkn1kfzkszmbld4cpgrqsfive&#xD;&#xA;sdbzkzp1dq5lk&#xD;&#xA;28161twodfznxckr&#xD;&#xA;xfpgnrlfour61&#xD;&#xA;kzkkp65qtqfppc7f9&#xD;&#xA;twospplzdrdfvsixsnldtwotwo29six&#xD;&#xA;9fpbm&#xD;&#xA;3one83dlvdr&#xD;&#xA;9rvbtwo25sixkzlxfkg9&#xD;&#xA;8jbmfbfsxrnxk7oneninesix&#xD;&#xA;3798&#xD;&#xA;jhcqmfive9&#xD;&#xA;nine35&#xD;&#xA;596&#xD;&#xA;nvzztnine2vhhchqkzfjzmkgjbzlxhvtdhddnr&#xD;&#xA;5bltnjlmt12threenh2&#xD;&#xA;eight5sevenninepgxvhflb4eightmxv&#xD;&#xA;xtrct7fournfivefourfive&#xD;&#xA;dhbpsnpxsglnt5vsnclxhnntt61two&#xD;&#xA;twoonekntsmsd81fourfourfive&#xD;&#xA;gpnceightdx5pklsp79x&#xD;&#xA;four5fszlnphhxvhgbmfcdkdbgbc7&#xD;&#xA;xbxtjllpr9threeninesixbbtkn6&#xD;&#xA;p7&#xD;&#xA;nine644two5&#xD;&#xA;5zzzlmspbcx9vfdllvqtl8five&#xD;&#xA;four2bxmrthree&#xD;&#xA;7rhgfnzqbpgmpnfz&#xD;&#xA;threejhfmbmxzp469&#xD;&#xA;74ninebmtpfkzbcg5nine&#xD;&#xA;fflpg34two25lvnmxvqlv&#xD;&#xA;jtqtnthxqflp2onesix39&#xD;&#xA;9sevenninefd8qpfiveseven&#xD;&#xA;28mb5&#xD;&#xA;lflcphkxqqnzhd2five&#xD;&#xA;3seven4fftnss&#xD;&#xA;ninezxhxqxxpblm9&#xD;&#xA;4ninevgpmxxmqlf8&#xD;&#xA;sevenfiveonesevenfjccpmnnninesix3nine&#xD;&#xA;qmkvt6pxbdcbrcsrgppzptzchkmone&#xD;&#xA;2sixone&#xD;&#xA;6dzskdbknpsix&#xD;&#xA;twonpqfsvbmqgeight23ct&#xD;&#xA;4sevensxdzsfbmmmdrdjtpbh&#xD;&#xA;sxkpmmhsix9five7&#xD;&#xA;fnxtgfrltwo67threepvbsixzvj&#xD;&#xA;54jmvmdbkltqsixtmccscsixeight&#xD;&#xA;6fivefourrbshbc82jrfm2&#xD;&#xA;dhlpvhzhms6&#xD;&#xA;419bhbcdsvftxfvvkxcxprksjs4&#xD;&#xA;sqrq17nine&#xD;&#xA;84rjcbktz8hrplcqsvhqqnnqnsevencjhone&#xD;&#xA;gkmljdk2dgrlptkxdsix3four599&#xD;&#xA;cnjpf818sevennine&#xD;&#xA;8cvg&#xD;&#xA;3jqbbpfpxmpkrhfoursix&#xD;&#xA;9zkrhbmzkbzlcnxlgdsixthree8&#xD;&#xA;nine9kvxeight2zqvzhgjzjz&#xD;&#xA;fourbglmlqzgvzhjrmz2nzqxlqseven&#xD;&#xA;seven4five8nine44eight&#xD;&#xA;onegnine6&#xD;&#xA;qeightwosixfivesevenzmjfrqvnsbnqlt7four&#xD;&#xA;eightvrshp9xnxlgqcnninegvbj&#xD;&#xA;ninelpbvs9three8ltzvxnd4&#xD;&#xA;nmnlzone3grqbzcdnpxsbcbzxn4fjptnsrqsqgsdcv&#xD;&#xA;18fourcqfive1gccxg&#xD;&#xA;gfglone6bqsqjmlftcqpqmmqmglskzfourvkhd9&#xD;&#xA;5cxgkn1g&#xD;&#xA;29seven9ppr&#xD;&#xA;fiverkmhxvnbp3lvpeight1one&#xD;&#xA;77four5dsdqzvt&#xD;&#xA;gvvpbone23&#xD;&#xA;twolrjs56one&#xD;&#xA;six2745six&#xD;&#xA;kbxplzpsixsevenseven5one3&#xD;&#xA;threexzrcfgffkjsix9zgdseven56&#xD;&#xA;onetrqcfl6&#xD;&#xA;three23nine&#xD;&#xA;four2mv&#xD;&#xA;xzfnzkmeightthn6twotwoeightqmf&#xD;&#xA;hxxxldcvj99three5qgmllbtrsq&#xD;&#xA;6zcszjbrzjpgrvfivemnzkpbq2six&#xD;&#xA;6zvtsixone73three&#xD;&#xA;threeflxtwo5fivefhbjptgfjmgbhpmbjmsv&#xD;&#xA;5nineeightfourd&#xD;&#xA;five26five7sixthree1three&#xD;&#xA;fzvsixsix3mxxhseven&#xD;&#xA;twoccxdqqkdvc2two9ps6threefour&#xD;&#xA;447lkkoneonefour6rx&#xD;&#xA;8seveneightwox&#xD;&#xA;sgjv21&#xD;&#xA;soneightkmtps8onesixvpsdcfbbz&#xD;&#xA;8pzrtoneffhg&#xD;&#xA;mmzeight631&#xD;&#xA;5fonefive&#xD;&#xA;foursgx8fiveltczmccpzx&#xD;&#xA;sevensdbhnpmjninetwovlv1three&#xD;&#xA;64qrjdtpxbxdbcqmmlqtnine6sevenfxhcrjnine&#xD;&#xA;1seventhree&#xD;&#xA;ktmfour3&#xD;&#xA;fournine8skzxtftwo9h9&#xD;&#xA;bjq8&#xD;&#xA;mrshhhzsixcxsxxmbh1bone9fivelsplqv&#xD;&#xA;7threezvgxdvrthree7227&#xD;&#xA;znnvfive5mctxdfive3j4&#xD;&#xA;five2three8&#xD;&#xA;gdtdqc9nine1&#xD;&#xA;three3eightgnsxrmbmxld9six&#xD;&#xA;zsgmcpxxvseven7onetwoseven6&#xD;&#xA;8n3919hfiveoneightf&#xD;&#xA;3rfrzmlfsjxthreefour&#xD;&#xA;dnnshdvxdl6onendg27&#xD;&#xA;66lpbz&#xD;&#xA;sevenlkjpxthree5&#xD;&#xA;8clqlplvljone5hfh81&#xD;&#xA;fourldvjsixfourfour5xrmcnf&#xD;&#xA;9nine2&#xD;&#xA;4one1&#xD;&#xA;4vzjgncrztvstcf9one4&#xD;&#xA;four37&#xD;&#xA;4sixlqpnqxqtrhpc3&#xD;&#xA;8threejzg&#xD;&#xA;znxccm8&#xD;&#xA;one8eighteightkcvnqjpsp6nine&#xD;&#xA;fivesixgc74oneseventhreesix&#xD;&#xA;5twohshtsdtqk2&#xD;&#xA;hzmchfourvzjgnt2threetwo5cgfld&#xD;&#xA;one9three836one8nk&#xD;&#xA;ssslsdftjfgkpzkln5&#xD;&#xA;xhsxxkzk1x2tzbjthsnsix&#xD;&#xA;8nineeight3njq&#xD;&#xA;ninethree5eightbfour2&#xD;&#xA;five56sixclxjqsjseven8eight&#xD;&#xA;three3cninenz&#xD;&#xA;lt3onevpkgsixsix&#xD;&#xA;4pkbmgtwo6zmvn71eight7&#xD;&#xA;2eight6cdd83&#xD;&#xA;5kvp3zhzq&#xD;&#xA;vtcmdkkcmnmf1two&#xD;&#xA;nine2nponeoneseven&#xD;&#xA;xm1twofoursevenfoureight&#xD;&#xA;ggkvsljtddcmznlxlqb4one32oneightppn&#xD;&#xA;onehdq785&#xD;&#xA;vzthreezjbdrlvhglbbcvlfk5&#xD;&#xA;eight9smt1sixsevenckqxlbvdzone&#xD;&#xA;one7fdcbzjtfhbps9oneonetfftbneight&#xD;&#xA;3sixfgqbsngnd1zmqbxfllbp&#xD;&#xA;roneight28one8fpzmkhvdhbqlrfive&#xD;&#xA;4five2four453ttlvfqxb&#xD;&#xA;five2four413hhnts8six&#xD;&#xA;xlfpxbzrbphb3one&#xD;&#xA;eightone8nineeight&#xD;&#xA;1zprfttxqmtbhzckcfoursix2threenine&#xD;&#xA;7sixzqrjxn92pnbfxzbrnmvrnpjpdone&#xD;&#xA;pvlfeight1xkgrvczlcfvvl8kzcktkjbj&#xD;&#xA;four7phjzlzn3two3two9seven&#xD;&#xA;1tkcdvdtj7nqfsrnmfzghmkrqeight&#xD;&#xA;36fourxfdgrprrdgmjczxb&#xD;&#xA;five5fivefdkgnkfgd5&#xD;&#xA;5seven5sxlkbldznz53three8tmkzlrt&#xD;&#xA;8dkxkfvjkprxtjlh5tjvjm2glkpbmhjd&#xD;&#xA;seventwo3&#xD;&#xA;bgssljzld2one5seventhree4&#xD;&#xA;sixfourrqzdbdhhhc7lkxqbtsseven55&#xD;&#xA;6threegtwo7fivesrbvfk&#xD;&#xA;2mpxkrtjphdseven&#xD;&#xA;14seven9dkk&#xD;&#xA;85dmtjqkchp7two4&#xD;&#xA;hvqfbchqhpbggrqhf4ps&#xD;&#xA;dzdknbdceight72fourcmfvsrzt&#xD;&#xA;xmvgjjfourfourmjmkh5onefive8&#xD;&#xA;qdfreighteightninecdxrtdbd7&#xD;&#xA;mxlhxlbvbndqfzmseven34four&#xD;&#xA;432three5vqhmjzgvghnhhg&#xD;&#xA;ghczftpkttwo4sixoneone4brf&#xD;&#xA;kbbzcpsqsl7qdlgff5fourfive6jk&#xD;&#xA;v8nxzpjxntcbtwonrcgztsthree1eightpfdsp&#xD;&#xA;7zjdzbnrpltfivemgcsjzrdjskhfmbgvlr5dl&#xD;&#xA;9kpbzzr&#xD;&#xA;8386six3mzh3&#xD;&#xA;41nineeightfive&#xD;&#xA;twotwo5threebvgmmhqrlqltqmndhveightsix2&#xD;&#xA;58drxrgkklm&#xD;&#xA;8two48six3sixthtwo&#xD;&#xA;eight88msfnone87nine&#xD;&#xA;four5lvxfhktrconexqzqvl&#xD;&#xA;six8mrlccbeightonejnzbdkm4one&#xD;&#xA;oneseveneight366xzqmnmfvvrph&#xD;&#xA;joneight7nine7five&#xD;&#xA;5fourtwo26onefivegsnbcjj&#xD;&#xA;cpjnvhnzxsevendbnblfkpx44lzn88&#xD;&#xA;zfmdcsfkktwogxmrsbtwo2six78&#xD;&#xA;ninetwo59foursevenoneightsx&#xD;&#xA;vjbbphb5dddvksevenpmnmtjvzdvxkkbcqxbb&#xD;&#xA;9ccgtrznm4&#xD;&#xA;zplpfivesixkjfdvrv6rfmqk&#xD;&#xA;hfxhpsxgxjfdbfmjb6one&#xD;&#xA;threethree9&#xD;&#xA;six3seven&#xD;&#xA;seven286&#xD;&#xA;bnkrghgbkzdz29two31&#xD;&#xA;gvlzrhntvseven3&#xD;&#xA;twosevengdkzgv6&#xD;&#xA;rddtz12five9znvtsljztbztprthreeszkfhh&#xD;&#xA;nfivesevenhfpklnxqb4nineonermtfsk&#xD;&#xA;zzz2onegpthree4fdnqxrtcnh8&#xD;&#xA;4xchnsevenxnkbrdpzsnine6&#xD;&#xA;hveightwofourfive8&#xD;&#xA;8one3&#xD;&#xA;7chfpsbh1two&#xD;&#xA;two2eight5gchbxqvrmdfqvghtnjssix1&#xD;&#xA;zfbeightwo3&#xD;&#xA;qhjnfxpfoursix9five&#xD;&#xA;8fourrbrrjqqph&#xD;&#xA;five5threethreezfvskmsv76&#xD;&#xA;sixvtjnktt4&#xD;&#xA;5cndcht2fivebdnxcnzzmfninenineqzktj&#xD;&#xA;qfzclldsvzvcdqfxhtqqtknine527&#xD;&#xA;onefjrmmfqvgnxnjdtkdmk25zghnp&#xD;&#xA;hvddcjnoneeightnine9eight&#xD;&#xA;9lxpszk&#xD;&#xA;17fourfiverfnbmkrxlvone&#xD;&#xA;qxvdlrxq89vf&#xD;&#xA;qeightwotwo2&#xD;&#xA;rzmxzgnzljzssnxscvv9seven2kbnineseven&#xD;&#xA;sevenseven8&#xD;&#xA;rkhkone8four&#xD;&#xA;zn68&#xD;&#xA;5pvfjmjxthreeninevtj88&#xD;&#xA;51dtwo5ngvxnmjeightgbhzxbd&#xD;&#xA;two6kxkvscbxcg34six3&#xD;&#xA;qbn1&#xD;&#xA;hgxgtwoqtmsqbv3&#xD;&#xA;threethreejmtjk18two&#xD;&#xA;sixone4fourseven6zcgpdqps&#xD;&#xA;fiveqptd8gtjfour1twothree&#xD;&#xA;89fivefive4&#xD;&#xA;sixvnvmdmfeightcbbvbrkffqstwo7&#xD;&#xA;three4fivefive5klxvsbhslzsix29&#xD;&#xA;two9sixhncrcvxmf&#xD;&#xA;rsp146&#xD;&#xA;eight2jtvps&#xD;&#xA;7four6&#xD;&#xA;77p1znpskm&#xD;&#xA;bbdvfhqmxddlsvdpmtvctnine135&#xD;&#xA;dlclxtkxk85bn&#xD;&#xA;bxbjslnrfk6&#xD;&#xA;51zfrtvmcbkkrnd7&#xD;&#xA;27fivetwobbssnklg&#xD;&#xA;twojxdksqkm9ninejninekcbdgnsq3&#xD;&#xA;nineninebsbd8&#xD;&#xA;sevensevenggddbfxqrmonethree744&#xD;&#xA;srtbzcbsmfivetwothreejvzjzxqm1tjnjldcxnine&#xD;&#xA;nbsix32&#xD;&#xA;25144spnmfvvj1dxpqmhsldk&#xD;&#xA;5two4mrqnpxzs7foursevensevenr&#xD;&#xA;fourk9zszmnbvmkdrz&#xD;&#xA;lpqseven2seven&#xD;&#xA;hcjgtjcxh1dskx&#xD;&#xA;ssrnf2ninenine6ngbhfhdqsnine&#xD;&#xA;cz82jhmgn14cktblcl&#xD;&#xA;kxjzflkkbx53nine62one&#xD;&#xA;hbcnpbmfour1two&#xD;&#xA;ckjksxthree346pjtr&#xD;&#xA;ccslpmqnine27twodr&#xD;&#xA;cptwo5twoggmrjvl15eight&#xD;&#xA;4vlktln5kqfsnvrbjbszqzclmnkxseventhreefive&#xD;&#xA;one2eightwopp&#xD;&#xA;2sixsixone5&#xD;&#xA;klvsngvv38tcxvhpdhh5&#xD;&#xA;fivefllgljkdg9ndlkpbmgbrndqbpxqdk&#xD;&#xA;7ppkvstbtnvseventhreessd1three9&#xD;&#xA;threepnrcmb3&#xD;&#xA;thrqrcmzpzt7nine1three&#xD;&#xA;jvgrqgbcshhlnqrl2vrlppxbnjfrdtwofbsdvt&#xD;&#xA;rnhninezxbrlmnlczqnneightsix9one&#xD;&#xA;ghvqdxkqqfthree17&#xD;&#xA;dthreeseven2&#xD;&#xA;rkxfthree7nmfive6&#xD;&#xA;6vhnh&#xD;&#xA;13brdgbrdsvthreethreerttfkr&#xD;&#xA;ninelgfdc7&#xD;&#xA;88z9vzscqthkgnhmztjnhthreeseven&#xD;&#xA;1nine3mtgrfive8nine1&#xD;&#xA;thh5fivezfmtlsnvtdkfour34&#xD;&#xA;26six6cbjdssevenq2tl&#xD;&#xA;gxxnhsxqvjcvssrbrhbst6sixvcchxstbpb1ppqdbx&#xD;&#xA;vninexhkjkmzvhfpvcd7ninezzldthree&#xD;&#xA;2twozknrxvcsj&#xD;&#xA;3193spfourxcbdnf&#xD;&#xA;84six4vc1eightsix&#xD;&#xA;zljb46four6six&#xD;&#xA;sixfive2seven1&#xD;&#xA;1fbmq9fourmhbzzkhctp6ninenine&#xD;&#xA;onefourtworckjqzhqseven5seven&#xD;&#xA;five973knlxmtmdone8prtqlsltwo&#xD;&#xA;2ncgbgpq&#xD;&#xA;3eightthreepknbcs58three6&#xD;&#xA;6fivesrgqxhnzfouroneqpmgpmzgfoureight&#xD;&#xA;mphrj33five&#xD;&#xA;8sixfives26sdscdjtpchmh&#xD;&#xA;four64mtlxmnsjbtdkpmf4&#xD;&#xA;onefivenine9nine81two&#xD;&#xA;vfc9nqttbmbdkonegclxcgbxkx87t&#xD;&#xA;sqnzdrcs8sevensix6sixdjcmk6&#xD;&#xA;7npppqmrmblzjqckk8fourbpxlbtwonine&#xD;&#xA;nbkklkvpl2smlqbh&#xD;&#xA;37eighttwo17fh77&#xD;&#xA;eight7ninekkbvtwo&#xD;&#xA;eight18cmzzdpgl5&#xD;&#xA;sixdc17nine9ghzpdpnxcbxvztcrd&#xD;&#xA;fourfivelrmch54&#xD;&#xA;jbqbpzxbbdfiveeight9jnzfdh5xfmhhrkrkds&#xD;&#xA;146two6fourclmcllhl&#xD;&#xA;222dqgtptqqn&#xD;&#xA;gvhninesevenfiveonefcvnlmfcvjvf5&#xD;&#xA;9xgljlphcxeightfivehpdlfrmd1fmqhrnvbzboneightjd&#xD;&#xA;8sf3five6eight&#xD;&#xA;zrprbc8&#xD;&#xA;gqb6sixninerpsrpnlldteightgn&#xD;&#xA;2jdlxzk&#xD;&#xA;hfrbqn4zbpxqb81tlfxgxdvzz91&#xD;&#xA;qtdnxgmjjstlc1nndsnbbcdm6nine&#xD;&#xA;z7twonezp&#xD;&#xA;two17sevenljskthntjzxpkjrkc&#xD;&#xA;fivelvfive948&#xD;&#xA;sninehxqlkmv7oneonedbdvztzgh8&#xD;&#xA;2fourxcrkrcvn&#xD;&#xA;clh4four5htj&#xD;&#xA;hdkx4eighteightsix1kgtbb&#xD;&#xA;nlbsqhkltvmzs2njschfbmsl3fivensztjtwobxkfn&#xD;&#xA;fnrg3837five&#xD;&#xA;vxcldjmjxxcqntqcqnninefivestbbjvptfvkbr9onetwo&#xD;&#xA;4six7two&#xD;&#xA;8five5sevenslfqtblfiveone&#xD;&#xA;26ninemhvqkjgcvflplncfsixtwo&#xD;&#xA;7eight523&#xD;&#xA;9fiveplfdp1qhqhj15t&#xD;&#xA;three3eightrzvccr4h&#xD;&#xA;9vhmkkjfhtfjtwotwotkfvlhvs&#xD;&#xA;vxoneightczdfl4&#xD;&#xA;3one2&#xD;&#xA;threeeightfive2four&#xD;&#xA;gksfxtb4&#xD;&#xA;1jjgdldklznbktwo59&#xD;&#xA;761sxvprrzj2kxsmlmtpbqseven&#xD;&#xA;681q&#xD;&#xA;84ctsbf1six&#xD;&#xA;fivetwomfgplcfgfive7one1vgbz&#xD;&#xA;rfnqnnmsdcj6foureightfjfkphqpktwo&#xD;&#xA;9vntpmfsevensevenfour&#xD;&#xA;7zvchbn6two9five&#xD;&#xA;fourseven7&#xD;&#xA;2lvtkkbhtjeightfour89&#xD;&#xA;5nine5threemgsd&#xD;&#xA;933nxone5threeone&#xD;&#xA;2dtbbmghgxvkmtvnlgsxjlgbc&#xD;&#xA;1mcrlzhvzrc2&#xD;&#xA;ftwonegsndgxmbzn6one&#xD;&#xA;916vfvzvh8twolvhvlc34&#xD;&#xA;dtk7eight6c6&#xD;&#xA;kbhjg6qkdgh8rqlmstq4&#xD;&#xA;eightseven8&#xD;&#xA;bhlhcphznb92two&#xD;&#xA;q8d&#xD;&#xA;375sevenvhrhkbtbvncmqqmpxdhqzzggvr&#xD;&#xA;9onefour1nhmjb&#xD;&#xA;hqckpzrvgmgqjmvsrjhqx8twodgxkbh&#xD;&#xA;5grdsbtp6onezrkdvpdqt2&#xD;&#xA;tdgkr4&#xD;&#xA;foureight24&#xD;&#xA;ktds45zvjd&#xD;&#xA;eighttwo58lldklbmxn91fvlqllnxl&#xD;&#xA;threefive3bdmfbrhfklhxjvdgjxbp1&#xD;&#xA;hqpfgvk56oneone8&#xD;&#xA;two32fivetwo1nklfhjfffthree&#xD;&#xA;77jggmjkbqone&#xD;&#xA;6fckfqeight&#xD;&#xA;fivetwo8&#xD;&#xA;7five7threethreeb&#xD;&#xA;twosvbzfmv1fourtwoeightsixfive&#xD;&#xA;ninehninebgjnknth5bhzqlvthree6&#xD;&#xA;onefrdv3one1&#xD;&#xA;five35&#xD;&#xA;four3three3six9four55&#xD;&#xA;xbssqpvjnine9six9threefivetwomjdvmpxrh&#xD;&#xA;ctroneighttwofive3npxgbhfsix1rjnl&#xD;&#xA;8ckbzlmsbfxdn&#xD;&#xA;51gckxqqbnkntmvx1ltfmdvnlcjnine&#xD;&#xA;eight7gkql5&#xD;&#xA;sixjghxscppnfive23284&#xD;&#xA;eight7pgqxvsix&#xD;&#xA;46eightrjhgdmvf5&#xD;&#xA;four4bmjzzjqp1rv523twonevm&#xD;&#xA;3sixseven81oneeightwocr&#xD;&#xA;sixmmnqkrfplg7ztrpsixone4six&#xD;&#xA;1sixfive5nhrq9&#xD;&#xA;six8threeoneckbvqc9mzhb6nine&#xD;&#xA;33sixdfzmds12jcvfour6&#xD;&#xA;1cdlflvqhrkqpktdnnsx7six8eight7&#xD;&#xA;8four18&#xD;&#xA;tpfourvblonez8six&#xD;&#xA;fourone2smjpvclnine&#xD;&#xA;99zdtdpbbvhnninefourvzfmzbscdldhxtcjfh&#xD;&#xA;fzjeightwoeightnineseven6&#xD;&#xA;twonine2&#xD;&#xA;fourseven1eight&#xD;&#xA;2x3one&#xD;&#xA;qbjc1jtnbpdbr2six3&#xD;&#xA;sglmt84five5nine&#xD;&#xA;sixnljjqh4foursix&#xD;&#xA;4nxjgs79six&#xD;&#xA;lhkpzgzjr3z7&#xD;&#xA;onefourflllxbtkpvgfive2&#xD;&#xA;sixrdr1twoeight165&#xD;&#xA;1dxvjdhzb76915&#xD;&#xA;44pxzzttvdc185txvrpxq&#xD;&#xA;4fourfgllhzfz&#xD;&#xA;nxssptkdldkpchnseven9522nine&#xD;&#xA;nine7fivefivefffvqpvsqzsvnvlzfvfs2seven&#xD;&#xA;bzphzhgf2xrlqjgonefour3bclmhtlzbmddrq&#xD;&#xA;vsxf7eightzzndgfourfour&#xD;&#xA;rqbhb14eightthreethreevkjzhjlkcmfive&#xD;&#xA;sbkrlm3nine&#xD;&#xA;zkzlqfbzscndtlmn14four9bsscd&#xD;&#xA;six33&#xD;&#xA;1gbcgnpfnseven7plppdqone3smljtjlkhj&#xD;&#xA;9jsmdjshtzm92stx9onesd&#xD;&#xA;51four4two3one1&#xD;&#xA;bxkpcpcntkflxccsixseven1threengtrrp&#xD;&#xA;4dsdllkqnpxglbseight&#xD;&#xA;7threetd3onefour&#xD;&#xA;3vcnzndxfhfzvncfivefllrqvndtx964x&#xD;&#xA;nineeight1eightgqnzfhqkzgvfvctwo1&#xD;&#xA;6fourthreeseveneight&#xD;&#xA;eighteighttrhtplssvjnnkkreight4sixoneseven&#xD;&#xA;43hqrtctwotwo&#xD;&#xA;kcxfvhjksix3six2jbkrlmtwoseven&#xD;&#xA;43sevenpvqh9eight7xcbvnckrkshdx&#xD;&#xA;sixfive3745three&#xD;&#xA;hmxfmzqdpfzjjzdxsix8472qcpbrsgx3&#xD;&#xA;threelnzgs96five1&#xD;&#xA;1dftdbtgjrpfive3cztvmxkcxh&#xD;&#xA;pmrfive4jxfxq1&#xD;&#xA;eightclrzz981492&#xD;&#xA;mscl2eight3&#xD;&#xA;twovb8four7sevenfourkmzpdmpgxj&#xD;&#xA;59onefourxnmptgtcone&#xD;&#xA;6gsvxlbqspvzpsq&#xD;&#xA;eightthreesixtworcmpjkfvnsevenseven1six&#xD;&#xA;ghmflkhprkthsix9&#xD;&#xA;441fourfcvxonefourhg5&#xD;&#xA;four795seven&#xD;&#xA;tone11&#xD;&#xA;22seven9two&#xD;&#xA;5seventwo2&#xD;&#xA;fiveone6h&#xD;&#xA;936sevensixnine1lkp&#xD;&#xA;62kvhcg&#xD;&#xA;six19&#xD;&#xA;td25&#xD;&#xA;9two2four4fourmeight&#xD;&#xA;one6twosevencrthreeseven97&#xD;&#xA;1kttqbqkzvvr7265six&#xD;&#xA;65rzmfpfqjtzb11m1eight&#xD;&#xA;seven1rrhpxjqtp&#xD;&#xA;plktlvxkpkndhx66fivefivexkh&#xD;&#xA;tttwonefournine9oneonesplmp5d&#xD;&#xA;gkbl1fbn3two97onetwo&#xD;&#xA;1seventqngll&#xD;&#xA;dqfiverscjjrk7&#xD;&#xA;4sixfour4onethreecvbj&#xD;&#xA;24x6qhgtsxtrfh&#xD;&#xA;h6&#xD;&#xA;fourfour3three&#xD;&#xA;8hrdbnvxgndthhpmrgm&#xD;&#xA;ggzjfour8pxdlpx&#xD;&#xA;rnsixnine9fivensxfzzgzlseven&#xD;&#xA;sqzseven7&#xD;&#xA;rcpkzht5&#xD;&#xA;jxhtrkzl7eight3eightn68eight&#xD;&#xA;eightfive24&#xD;&#xA;kgxv7kclnsscsmqtnmv&#xD;&#xA;foursix2chgckldprp3zqntzscxfc&#xD;&#xA;sixsixfourone3tnbpxbmgqccncgxxnine&#xD;&#xA;oneeightkgsbdthreefivepvrsktvhrnine5s&#xD;&#xA;4vtpzghfsj&#xD;&#xA;7four1lttzxpzcbtqqdthreek&#xD;&#xA;five76&#xD;&#xA;vlqvvdhhnfzfssvthree3ccsdjhgc3seven&#xD;&#xA;2nine8six&#xD;&#xA;lddxjsczqkd26g5jpvdlfour&#xD;&#xA;1twotwofcl&#xD;&#xA;sltfz55knrfvhhbbeightsevenninesevenfour&#xD;&#xA;27155bvv&#xD;&#xA;dxjzmftwo2vnljlsthree3three&#xD;&#xA;twoqdpzhjhbzksix49dhdfq&#xD;&#xA;three2fivenineqbxkgfivefour&#xD;&#xA;qnpsfq8twoonevsjffive9&#xD;&#xA;gqvvmhxgx6gdsqmgccrmzrzltwo81szbnbkxt&#xD;&#xA;2one1czgjvtcgxfivenqsfourthreethree&#xD;&#xA;ppcspzrnnssvnht9hdfoursix&#xD;&#xA;mmqrzdkmt7sjqgsrq9rhxpgpsixgkjflnht&#xD;&#xA;57foursixfive4fourfive&#xD;&#xA;tjrfj3qldspjklvdtcb6ninefivejmbntcthree&#xD;&#xA;cgjnhsixsixsixfive7&#xD;&#xA;eightqdqgjppcfive7fivexznfsmtk&#xD;&#xA;fivefive864scrf&#xD;&#xA;six95five17threeslktfgd&#xD;&#xA;77mrrjzc1cbnkxfkxcdmxsmtwonet&#xD;&#xA;sxmsjccjrseven45&#xD;&#xA;kjpsn1eightccctxthreevvffseveneighttwo&#xD;&#xA;5twoneqr&#xD;&#xA;3threemvlqpvhdqgtqseight&#xD;&#xA;jqrxrqlz93ninesmppvdhtxk5five8&#xD;&#xA;threesixsntqreight593nine9&#xD;&#xA;fouroneznpfive6qmn8&#xD;&#xA;eightfive3sixxrrjgzlb&#xD;&#xA;gds345twotwotnjrnhjxdz&#xD;&#xA;27nprk7&#xD;&#xA;eight1three2onefourcfctvmhnqlfour&#xD;&#xA;1fourvjgkpdrsj4kd2ncd&#xD;&#xA;nine85ncsqbrmdtxbtrjxgztq&#xD;&#xA;twonineeightonerdnkjkrbpsbzcpone5&#xD;&#xA;nine8lkkvxfvlsixseven&#xD;&#xA;49three9&#xD;&#xA;jqmzthzjjseven5&#xD;&#xA;seventwo9z7four5twohstlzjx&#xD;&#xA;bzvbvsix7&#xD;&#xA;2five4&#xD;&#xA;fourthreesevenfour2nine1fivezspphbmjv&#xD;&#xA;7skjhonejhklktvzjflnineonemmgvnnine&#xD;&#xA;pmgxshqpjhn9qptllp&#xD;&#xA;2nine5&#xD;&#xA;fourqpzjrtttssthsxsq1jkrlnkk&#xD;&#xA;eight53njhcfhbjfthree3ksgrrj&#xD;&#xA;cgmvkqlcgzgfqxmgkfdzxxnxjgsd6eighttvggmfbdvztwo&#xD;&#xA;onefour8txkkpvfourzbhpsnrzleightseveng&#xD;&#xA;49z2six591one&#xD;&#xA;768five&#xD;&#xA;xgkfonethreexnlcptbgxhnine4fivetwosix&#xD;&#xA;6ghccxxjponelmxeight4&#xD;&#xA;3ninedlkvcbfmd2ktmjxsgdgr&#xD;&#xA;3threefourxcgnxhkqkjbdzb&#xD;&#xA;49eight44rlhg83gktmtm&#xD;&#xA;fnbnnpvcthrsjxnqdn9&#xD;&#xA;ldrfhknine3394lgvseightwoj&#xD;&#xA;zmpsc3lzlkmqjc5eightthree&#xD;&#xA;llpmmfsmt8llknhrn&#xD;&#xA;onedvc3sixxx9four&#xD;&#xA;148eightq6&#xD;&#xA;95one9sevenfourfour79&#xD;&#xA;one9eight78gnrthxbn&#xD;&#xA;95xzzlpjzqdtonezfntwo6sixf&#xD;&#xA;eight1sevenn8bgnmnxbmdk&#xD;&#xA;1sixseventhree2&#xD;&#xA;twogjprzznd9sixsevencpfbh1&#xD;&#xA;gnbtwomtltppkxxtwonlfxsbzjtt4bjlfxlqhlx&#xD;&#xA;three5oneoneqd3bcjgl&#xD;&#xA;pzngtc2four4811&#xD;&#xA;nnlqscgg8nine7vst4three&#xD;&#xA;fourcdqc7vvqhpgqlkjsevenfivefiveseven&#xD;&#xA;5sixtwo9sixqmxxgjvjqjtworlzpv&#xD;&#xA;6dkknsmfmnq&#xD;&#xA;2two74five7&#xD;&#xA;four3vvfskp&#xD;&#xA;qqvpdttrfiveseven6&#xD;&#xA;tbgeight8eightsix976&#xD;&#xA;sevenninetwo3jdone&#xD;&#xA;three6seven7nine82&#xD;&#xA;fxffmkjn2sevensix&#xD;&#xA;5xzbf4bjqfrfourpjhscxz&#xD;&#xA;5eighttwoeight7fivex1bnfpr&#xD;&#xA;1j3262&#xD;&#xA;two1fvxchkcdtqctph&#xD;&#xA;vgnrqn4three&#xD;&#xA;plzrk3tmqpxnhpkq6four&#xD;&#xA;four5eightone6threedbnjkvjvzxl&#xD;&#xA;bxcqcdnjjsz66gnxbhcct2nfhqlbs&#xD;&#xA;twovvqb9pxrxkmflzqeight&#xD;&#xA;86&#xD;&#xA;eight9eightsevenone2&#xD;&#xA;dclk16seven&#xD;&#xA;lzs15four&#xD;&#xA;265ninetzpnbxzllkq&#xD;&#xA;ttldqsnineffpplcxmbvknkmtdbzlsix7sbkvqhn77&#xD;&#xA;eightgxzcjvgmtgzc9gndqxbxnsktvp&#xD;&#xA;mpqxldjnfive1pzvxbqqtwonine&#xD;&#xA;gzbczdrqkmtm3lzrhnf&#xD;&#xA;mlbsfqvrrtcrvhjjbs5&#xD;&#xA;fiveljrcn27&#xD;&#xA;bvnxlsfmv6eightnine3rhsb&#xD;&#xA;five5five&#xD;&#xA;eight31zztkhrznmkbx2kvzl4eight&#xD;&#xA;fvccqgfzsqfour453125frz&#xD;&#xA;xxf5threefourtq58&#xD;&#xA;stvfjpj1ggnzgcfzldd2hbxmbgtftpskbtqmgv&#xD;&#xA;11cbcps6&#xD;&#xA;dltxch6onenzsmqbfn4onezkdntjzpc4&#xD;&#xA;4eightthreej7lpqbvzz&#xD;&#xA;sevenlgonexmrmtfhqpfourp7&#xD;&#xA;hjjdgtldrfivednsfdnmn24vtqgxk&#xD;&#xA;41tnjbxk2gghb&#xD;&#xA;2eightwotg&#xD;&#xA;eightkvhkzfivesixtcnpsxssvveight2&#xD;&#xA;59dnmmpone6mzqlnf8dvnone&#xD;&#xA;kfvqrgv87trlninedf&#xD;&#xA;85bnxlhdrmjt&#xD;&#xA;zvzxt4pzlnbb&#xD;&#xA;jfour6lpvvvbdn76tbblfqtwo&#xD;&#xA;lnqpscgkone1&#xD;&#xA;mcnfzmvzkxp1&#xD;&#xA;threeseven9onepvqhgdxcxmhtkxxvlhqrnine&#xD;&#xA;sixrzrjcmbpppcvf1bvbhblrmz&#xD;&#xA;6tzthree7sevenlm9&#xD;&#xA;four3gkqrmpgnjltwo&#xD;&#xA;threetctttrh3&#xD;&#xA;ctcfljkgm7bcphzxzjj7sb43zdkvkddktwo&#xD;&#xA;sixzjkxlfourhqtwonbslgpt9vljz1&#xD;&#xA;sgz5&#xD;&#xA;vrrfjbjpsevenzbqcnthreelhxjqmdd2&#xD;&#xA;sfmjnbnnpvthreedbsh7six5&#xD;&#xA;twovdjqdtrxg5&#xD;&#xA;nineeight7five&#xD;&#xA;4xlpdvlvonekqmqvcqjsevennsd&#xD;&#xA;fiveblbxxjcbhxvnkfd9one7twoninebj&#xD;&#xA;xdxp54sixseventwo&#xD;&#xA;onefive7&#xD;&#xA;ppgsqgjfourfourfivegtbrlkdvs1jl&#xD;&#xA;twotwoeight6sqlmffdm2three&#xD;&#xA;cvszcvq8eight&#xD;&#xA;79three&#xD;&#xA;44fivembtdfivetwones&#xD;&#xA;zqkthreefoureightthreethree2five&#xD;&#xA;74twotwo&#xD;&#xA;six6fnjz1plxb19&#xD;&#xA;mkfj72nine&#xD;&#xA;seven1nine5fourqsgrj&#xD;&#xA;5fntdgbzkjfhxlqrzcq7&#xD;&#xA;six9lgddrhjc9&#xD;&#xA;1zfzp7&#xD;&#xA;2lmncxvxbbsix7jbjrjsnvx1nine&#xD;&#xA;6eightseven3&#xD;&#xA;5vsqhnone&#xD;&#xA;xoneight3j&#xD;&#xA;1gxvbbhfdmsthxgrvnm&#xD;&#xA;sixthreeone13&#xD;&#xA;2three8bzbbd&#xD;&#xA;3dsix1&#xD;&#xA;24kmxnlpqxgpsevenfoursixfour&#xD;&#xA;fqpzqphmczcvlf2mxqvxnfqxthreeone&#xD;&#xA;eight789eightnhsh67&#xD;&#xA;zznxlmhgr3eight&#xD;&#xA;beightwolgnb4997fgx35dt&#xD;&#xA;four1dsgpfzltwo57threefivetwo&#xD;&#xA;xnjjvmlkkgsht99&#xD;&#xA;1sixhhqkx9&#xD;&#xA;eightdhmgqjflthone44eight&#xD;&#xA;9ftzbdsdkd9plrrtwo&#xD;&#xA;vhbvd8h&#xD;&#xA;txxonemsfshdrpc15onefive1four&#xD;&#xA;qgbd4eightrqxlznbjqxmxgmbrnvh7jkd&#xD;&#xA;eighteighttwofive5jsqkgm&#xD;&#xA;89hn&#xD;&#xA;3lzfjpcthreeonenine&#xD;&#xA;hkpc2sixdfldx1&#xD;&#xA;3two72jbxttzfcv&#xD;&#xA;mmkjmmlvcxxvtwo25nine2&#xD;&#xA;8751gphkmsvsjhvkzfc&#xD;&#xA;one8kmcktvzgdninegkl&#xD;&#xA;twokpxphkbjctqdcvf63one3prfive&#xD;&#xA;twotsxhbppfjcpkdfourfiveseven8sixn&#xD;&#xA;3fouronebnclssixfour6eight&#xD;&#xA;cmdgcsix1&#xD;&#xA;2eighttdqsjdrtwolmvpxqgxhd5five&#xD;&#xA;one7ninefivesevenqvpf5xmccsseven&#xD;&#xA;2n7xbptnkxzcninedhhpdcsqkc&#xD;&#xA;5n&#xD;&#xA;1kfv4821&#xD;&#xA;pslpmthreethreeone29tlmgj&#xD;&#xA;sixsevenlhn1&#xD;&#xA;nine9twoqrdgdxxfsevenmjseven&#xD;&#xA;rkrdlnjknine62&#xD;&#xA;f3&#xD;&#xA;6zzrfxdxseventhree&#xD;&#xA;265one&#xD;&#xA;seven3lbcvjxqhhdpzkttqsixjzzjjbclfq1fiveeightwojx&#xD;&#xA;seightwoone8qxcfgszninesvfcnxc68&#xD;&#xA;strqnb5eightbpnkcjdz6&#xD;&#xA;fiveninebtpbpjqbgx2bmjrgmprnd&#xD;&#xA;sixgtxr2fourrdkjg&#xD;&#xA;fivebxsevensixone872dlx">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CLHEpp2eCfxNaGG8xkeBcC" Bounds="570,107,445,175" ShowValueBox="true" isIOBox="true" Value="Can we do it the easy way and just run replace on the input string to replace spelled out number strings with their digit equivalent? &#xD;&#xA;&#xD;&#xA;No! those tricky elfineers. &#xD;&#xA;Notice how eightwothree the letter T is shared between eight and two. &#xD;&#xA;So if I run a basic replace and replace two=2 before eight=8 then I will get eigh23 and the eight will be missed. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ ReplaceStringNumberWithDigit ************************
+
+-->
+          <Node Name="ReplaceStringNumberWithDigit" Bounds="1159,139,181,776" Id="Ixh6urRrHeRLcVG0D8wNC0">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="MVr7glpVg5yPTbkINVwU00">
+              <Node Bounds="1171,224,51,26" Id="Euj6CSB7I4nPgAH8tmN1zO">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="MDlPyeVQDRUMStqBNYdAA0" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JfSY4FuzjAOQWoU4ndpsbh" Name="Old Value" Kind="InputPin" />
+                <Pin Id="AIntLUg6GqONJmqLJu6Hu2" Name="New Value" Kind="InputPin" />
+                <Pin Id="CkSVjXlbkgZMhBMBi8A9wZ" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <ControlPoint Id="Ei4SYN9LBKAMbl5Ykil5xv" Bounds="1173,157" />
+              <Link Id="HJUu8cAlkFlPIJI4TjWnTc" Ids="Ei4SYN9LBKAMbl5Ykil5xv,MDlPyeVQDRUMStqBNYdAA0" />
+              <Pin Id="DOHTAPo2RGhPD10ihw5ti5" Name="Input" Kind="InputPin" />
+              <Link Id="FOSAjdB4ph7PvXF23U04Cw" Ids="DOHTAPo2RGhPD10ihw5ti5,Ei4SYN9LBKAMbl5Ykil5xv" IsHidden="true" />
+              <Pad Id="VkjkvyhtXbzQJ6Q0k4WTRd" Comment="Old Value" Bounds="1196,191,35,15" ShowValueBox="true" isIOBox="true" Value="one">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="COHgo39cPD9MjFC2VjOKvC" Ids="VkjkvyhtXbzQJ6Q0k4WTRd,JfSY4FuzjAOQWoU4ndpsbh" />
+              <Pad Id="RyByrPfYXYGO1hSvc4BJTJ" Comment="New Value" Bounds="1219,211,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="UQGeAeoSuJqNmTjio5Ztvc" Ids="RyByrPfYXYGO1hSvc4BJTJ,AIntLUg6GqONJmqLJu6Hu2" />
+              <Node Bounds="1172,299,51,26" Id="GKgq4WeMGBsNBRCBsK63DB">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="FHZg39cogl3NYjXXvOUXi4" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UR1RzjfIplZNszXRK9Vynt" Name="Old Value" Kind="InputPin" />
+                <Pin Id="HAFLEqezmhvMs087PWNDkW" Name="New Value" Kind="InputPin" />
+                <Pin Id="RfNC6N2sSuCOQC02SzchUV" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="J597j6RTL0LPTY6eZJpueG" Comment="Old Value" Bounds="1197,266,35,15" ShowValueBox="true" isIOBox="true" Value="two">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="DXc6UJuQoerMIkMYzxQbdd" Comment="New Value" Bounds="1220,286,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="EAzxFH3rBFUNBegcjzVIp8" Ids="J597j6RTL0LPTY6eZJpueG,UR1RzjfIplZNszXRK9Vynt" />
+              <Link Id="MWjP21oCpcENUsTvSVpUk3" Ids="DXc6UJuQoerMIkMYzxQbdd,HAFLEqezmhvMs087PWNDkW" />
+              <Link Id="TN3wGLtVIYUMiUdilDU9FD" Ids="CkSVjXlbkgZMhBMBi8A9wZ,FHZg39cogl3NYjXXvOUXi4" />
+              <Node Bounds="1173,379,51,26" Id="QuDFNYKl8t9NeUi5Al2ISd">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="Hmr6tvfUgx8MXqlZPZQb99" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JszPeGWUe06QYSYTePZHcc" Name="Old Value" Kind="InputPin" />
+                <Pin Id="EmgCmcxs4wVLZPk5zIVAbQ" Name="New Value" Kind="InputPin" />
+                <Pin Id="ETHWe2SZR9fN20ffOuk5dA" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="BxdhQWxT76SMlrpmKLERD9" Comment="Old Value" Bounds="1198,346,35,15" ShowValueBox="true" isIOBox="true" Value="three">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="UmRQVEgqNsCLwpMYJEuhwA" Comment="New Value" Bounds="1221,366,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="1174,454,51,26" Id="EdnRmjWby3KO8HCTCAIGi2">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="VXb7qPbEhx7QRW0BLdAjHC" Name="Input" Kind="StateInputPin" />
+                <Pin Id="R10BAvK0P3XM9gd8PwQKo1" Name="Old Value" Kind="InputPin" />
+                <Pin Id="Ic16qhrD1vdN85qo5BMqVg" Name="New Value" Kind="InputPin" />
+                <Pin Id="Vk8RFCfrAuFOUzbdZJd5IB" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="OTBHNSAiypdMdj7Ab2wBPc" Comment="Old Value" Bounds="1199,421,35,15" ShowValueBox="true" isIOBox="true" Value="four">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="Oh0wxeBOHIZOKn5E6d3wty" Comment="New Value" Bounds="1222,441,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="F3iCw3iZLjrLM348u8EAUa" Ids="BxdhQWxT76SMlrpmKLERD9,JszPeGWUe06QYSYTePZHcc" />
+              <Link Id="B9ZlJba3ry1PFKc3g7GGeg" Ids="UmRQVEgqNsCLwpMYJEuhwA,EmgCmcxs4wVLZPk5zIVAbQ" />
+              <Link Id="EQ2IfyPqFdULYiXyjbXUmi" Ids="OTBHNSAiypdMdj7Ab2wBPc,R10BAvK0P3XM9gd8PwQKo1" />
+              <Link Id="M8jQ7W00CCoQBmItzbAwsI" Ids="Oh0wxeBOHIZOKn5E6d3wty,Ic16qhrD1vdN85qo5BMqVg" />
+              <Link Id="IN1TURosCDJPQ24cIutZTK" Ids="ETHWe2SZR9fN20ffOuk5dA,VXb7qPbEhx7QRW0BLdAjHC" />
+              <Link Id="Hi9aBGsFvB3LwR5Agr7yt9" Ids="RfNC6N2sSuCOQC02SzchUV,Hmr6tvfUgx8MXqlZPZQb99" />
+              <Node Bounds="1174,536,51,26" Id="J41ZtsR7iqWNfkc6ZD7Fbu">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="KibDMyOB3yzO07SdRSwNhJ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PPDAijG9k2JL7f7bS19zzt" Name="Old Value" Kind="InputPin" />
+                <Pin Id="LtivB8cOJjbPH485lv93Aw" Name="New Value" Kind="InputPin" />
+                <Pin Id="UMD7mjRE8LkMB5IaBQQ55N" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="FjJXEkP9aonQT2EHgkc4CQ" Comment="Old Value" Bounds="1199,503,35,15" ShowValueBox="true" isIOBox="true" Value="five">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="JeTWImIJFkJLxbZpFzzCqZ" Comment="New Value" Bounds="1222,523,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="1174,611,51,26" Id="UxG1O8AgYaiPGxSudsPMlU">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="OLIbk9zjMAmN7avsxQmoqE" Name="Input" Kind="StateInputPin" />
+                <Pin Id="O2vd9aTJzEdOQUTXMULp6y" Name="Old Value" Kind="InputPin" />
+                <Pin Id="CpvcU6RIaFSOTXszLtekNf" Name="New Value" Kind="InputPin" />
+                <Pin Id="SeHxcaolYmhLeerqU6yY4h" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="MOaYT7kV6N9QXgeXOR9tFo" Comment="Old Value" Bounds="1199,578,35,15" ShowValueBox="true" isIOBox="true" Value="six">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="MeNUMEkTQoyOLyGEBsREwc" Comment="New Value" Bounds="1222,598,35,15" ShowValueBox="true" isIOBox="true" Value="6">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="P148b3gjuwsNnYvWJXonta" Ids="FjJXEkP9aonQT2EHgkc4CQ,PPDAijG9k2JL7f7bS19zzt" />
+              <Link Id="ALDBBhSxvWFNXfwIB5NkT6" Ids="JeTWImIJFkJLxbZpFzzCqZ,LtivB8cOJjbPH485lv93Aw" />
+              <Link Id="QJU7QGMosaNNwimgGfOq6X" Ids="MOaYT7kV6N9QXgeXOR9tFo,O2vd9aTJzEdOQUTXMULp6y" />
+              <Link Id="KtFwN5Q2MG4PXeYQ1puMqD" Ids="MeNUMEkTQoyOLyGEBsREwc,CpvcU6RIaFSOTXszLtekNf" />
+              <Link Id="H9GhNOr0xavOSTLlxS4ioK" Ids="UMD7mjRE8LkMB5IaBQQ55N,OLIbk9zjMAmN7avsxQmoqE" />
+              <Link Id="V5ZzXfMLfITNXBaARsRzKd" Ids="Vk8RFCfrAuFOUzbdZJd5IB,KibDMyOB3yzO07SdRSwNhJ" />
+              <Node Bounds="1174,691,51,26" Id="VYyFfJV1M7ANoSgYkQNeKT">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="HhqIT4FP7kQOrFHpu2vZuE" Name="Input" Kind="StateInputPin" />
+                <Pin Id="T7I95pNiS0PNV1VOTKB4z6" Name="Old Value" Kind="InputPin" />
+                <Pin Id="By7noUQlroZLmuWgOViNKr" Name="New Value" Kind="InputPin" />
+                <Pin Id="Q1ON8SyxpYCPkHtaR214cI" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="Feqo3zG0S9TM0VjJjOVUG1" Comment="Old Value" Bounds="1199,658,35,15" ShowValueBox="true" isIOBox="true" Value="seven">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="LeRGFD5a1HlLesW1K0EdXh" Comment="New Value" Bounds="1222,678,35,15" ShowValueBox="true" isIOBox="true" Value="7">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="QGwiMStHJX3PjIjZRUwVIr" Ids="Feqo3zG0S9TM0VjJjOVUG1,T7I95pNiS0PNV1VOTKB4z6" />
+              <Link Id="Vi7lFtScEDbM77Z5SI5qDE" Ids="LeRGFD5a1HlLesW1K0EdXh,By7noUQlroZLmuWgOViNKr" />
+              <Link Id="Axi0mW6DtFbMpHhlLVSDiQ" Ids="SeHxcaolYmhLeerqU6yY4h,HhqIT4FP7kQOrFHpu2vZuE" />
+              <Node Bounds="1175,773,51,26" Id="BmWN6yMhbN2NI0L6XT8b2L">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="NmyWIFpV6MrL0SbTzzuXGj" Name="Input" Kind="StateInputPin" />
+                <Pin Id="C12BXx1RYpQPXQhvtQEemz" Name="Old Value" Kind="InputPin" />
+                <Pin Id="FteYWYAo2EyN4GLxp34RUK" Name="New Value" Kind="InputPin" />
+                <Pin Id="L8RtEtxZ8NGO1NopBl0yTC" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="QDmNABqqCSsL8CnX8NeXk1" Comment="Old Value" Bounds="1200,740,35,15" ShowValueBox="true" isIOBox="true" Value="eight">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="HgHMBZy6zY1LmbhnsEtXqA" Comment="New Value" Bounds="1223,760,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="Lu5ZzeGHAbRMqTJoXW2ANY" Ids="QDmNABqqCSsL8CnX8NeXk1,C12BXx1RYpQPXQhvtQEemz" />
+              <Link Id="Ga0prLtZSIoMsDfjrNPzWe" Ids="HgHMBZy6zY1LmbhnsEtXqA,FteYWYAo2EyN4GLxp34RUK" />
+              <Link Id="Opu4zt8x36DPLj5YFEBI3E" Ids="Q1ON8SyxpYCPkHtaR214cI,NmyWIFpV6MrL0SbTzzuXGj" />
+              <Node Bounds="1175,852,51,26" Id="TexDuje5UypQAZqY2oiTju">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Replace" />
+                </p:NodeReference>
+                <Pin Id="QPw41XJ3cnwOF5w5RLb5ZO" Name="Input" Kind="StateInputPin" />
+                <Pin Id="N43XkJs7Ac8OOQjPRLgbNI" Name="Old Value" Kind="InputPin" />
+                <Pin Id="ImtmG8ijY1OMV9D6TEtU4Y" Name="New Value" Kind="InputPin" />
+                <Pin Id="PNw7OrJ3TjHOxfsDYbt9L5" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="D4S48nCMgUJMCsnQf0YXah" Comment="Old Value" Bounds="1200,819,35,15" ShowValueBox="true" isIOBox="true" Value="nine">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="N0tiqVpH1qQPSDqik3ruHq" Comment="New Value" Bounds="1223,839,35,15" ShowValueBox="true" isIOBox="true" Value="9">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="RV0Kt9eODZbMtqPOY393Kc" Ids="D4S48nCMgUJMCsnQf0YXah,N43XkJs7Ac8OOQjPRLgbNI" />
+              <Link Id="Us2s4ltRLarPUme063tox5" Ids="N0tiqVpH1qQPSDqik3ruHq,ImtmG8ijY1OMV9D6TEtU4Y" />
+              <Link Id="VdtzLDxcLhMMIJi6f64b9Z" Ids="L8RtEtxZ8NGO1NopBl0yTC,QPw41XJ3cnwOF5w5RLb5ZO" />
+              <ControlPoint Id="FiNbjOCodWiP8mX1VM4U1H" Bounds="1177,898" />
+              <Link Id="UDBt0ANYmhdLPzu32c9G6c" Ids="PNw7OrJ3TjHOxfsDYbt9L5,FiNbjOCodWiP8mX1VM4U1H" />
+              <Pin Id="Tvl12c5eum8NwLGoyepyEa" Name="Output" Kind="OutputPin" />
+              <Link Id="Lyx1dYegjM6PipM2xscINB" Ids="FiNbjOCodWiP8mX1VM4U1H,Tvl12c5eum8NwLGoyepyEa" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Pad Id="LcnSFiFx4O4PPCQppwC0El" Comment="Force" Bounds="73,241,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="V0DvpkeFgLtLEQ4uu1MFOT" Comment="" Bounds="94,777,74,126" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">10</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="AsE8pYKkEOTQOBGtRuZ5BT" Name="Attempt1" Bounds="15,6,1401,1016" />
+          <Overlay Id="UGIYjEKcPQxL8JvcO6guHi" Name="Attempt2" Bounds="11,1038,1397,1490" />
+          <Pad Id="J8IVTX5hNl0MYvCzhFXjfe" Bounds="737,1173,528,570" ShowValueBox="true" isIOBox="true" Value="Ok this time we do a bunch of subtring searching without actually updating the original data. Just noting the position of the spelled out words. &#xD;&#xA;We do it for the digits as well.  &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;1. The sequences of strings we want to check and what we want them replaced with (replacment value also a string because we need to do the concatenation later)&#xD;&#xA;&#xD;&#xA;2. Split input to spread of lines&#xD;&#xA;&#xD;&#xA;3. Index of returns the position of the first sequence of the search string in the target string. It returns -1 if not found. So we only want to keep results greater than -1. &#xD;&#xA;&#xD;&#xA;4.Leaving us with the spread of positions and what number is at each position.&#xD;&#xA;&#xD;&#xA;5. Sort the posititions and find the lowest one, then get that digit&#xD;&#xA;&#xD;&#xA;6. Same but use LastIndexOf to find the last version of that sequence, and then after sort we take the highest (last) digit that is found. &#xD;&#xA;&#xD;&#xA;7. Concatenate the string and parse as number. &#xD;&#xA;&#xD;&#xA;8. Sum it up&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Def not the fastest solution but at 1000 rows of data completely fine.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ViNpvV4rzj6P6QHzUoKC4r" Comment="ex2" Bounds="94,1227,145,127" ShowValueBox="true" isIOBox="true" Value="two1nine&#xD;&#xA;eightwothree&#xD;&#xA;abcone2threexyz&#xD;&#xA;xtwone3four&#xD;&#xA;4nineeightseven2&#xD;&#xA;zoneight234&#xD;&#xA;7pqrstsixteen">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MUVrdlKf8CaOgaX4SWorfs" Comment="puzzleinput" Bounds="292,1228,108,75" ShowValueBox="true" isIOBox="true" Value="two934seven1&#xD;&#xA;8825eightknfv&#xD;&#xA;sevenoneqbfzntsix55&#xD;&#xA;foursqpqvv192rdrbtcccfourone&#xD;&#xA;9jpzhpxqthreelmrnlhfqmn4&#xD;&#xA;onedpsckg3xdhmgtsixthreefivejlncszkxeight&#xD;&#xA;4twofour&#xD;&#xA;7eighttwo17fournsmrznntgjrdpkdjvx&#xD;&#xA;573&#xD;&#xA;ninethree3&#xD;&#xA;3gngzkpkgrf&#xD;&#xA;qeightwo2xjvfkfiveone&#xD;&#xA;twoonej26&#xD;&#xA;sgoneightfoureight5sevenjzsqghg&#xD;&#xA;bnrb36xtjd7four9&#xD;&#xA;threepprhsff3prbpfivesevenseven4&#xD;&#xA;38sevennineninemnfzklttkxnine3&#xD;&#xA;8mllzkfqklhonefivemv4&#xD;&#xA;onedcqlqcrzn66three&#xD;&#xA;1fourjthreefc2gbtbdzsix&#xD;&#xA;eight7two4258&#xD;&#xA;4hmfzdzf&#xD;&#xA;26dsmdzznm7&#xD;&#xA;plckvxznnineh34eight2&#xD;&#xA;dhrvd4eightgxznhqmh&#xD;&#xA;5fxhhkghvm3nineshpcxhtwo6fourhrktpbq&#xD;&#xA;qklhmhmdlgeighttwoonetwo52five&#xD;&#xA;86threemmpchhzdvsvxfzrj&#xD;&#xA;9clvchpgrslnkhdmfkjmlrvgnf&#xD;&#xA;8ncpdtspfivethree&#xD;&#xA;gtbtkqcgvh8945&#xD;&#xA;sevencrkbt3btljpdpgstlf&#xD;&#xA;8nine37bpkmtghhnc2hnreightwohvs&#xD;&#xA;5qxmsrthreempcmpdcnnv41&#xD;&#xA;8threezrxhxgx4g&#xD;&#xA;jhsb3onep1&#xD;&#xA;eight71rnz&#xD;&#xA;7p16lrxktlr6&#xD;&#xA;8one5fivelvdbjzz&#xD;&#xA;1nine2twodhnineonesixkqfcbgdlfg&#xD;&#xA;four8sixfourfive&#xD;&#xA;pjdmt4one8sdsdhhqxlqgzpk6qrtdvxm&#xD;&#xA;sixzfourkdpmnn92qbjkjqfqpn&#xD;&#xA;42threefiveh&#xD;&#xA;5fhgzt8threemzhblb6&#xD;&#xA;bbc3kxhvbfrn8four6five&#xD;&#xA;91fknhthreefour&#xD;&#xA;six9fttmqpninethreevhgtrxklbvxbljsp1&#xD;&#xA;four5five1471mtfv&#xD;&#xA;3bjkggcntwo3ptmjhmthree7&#xD;&#xA;four2eightone&#xD;&#xA;threedrzktlgbz4five&#xD;&#xA;dmpgttqfivekcdjbf49six&#xD;&#xA;9bplkkgrxgjqjqb3seven&#xD;&#xA;4861sx4six&#xD;&#xA;hjzmxtxvxkkpbvgpvmgb4two8bqxlvponesq&#xD;&#xA;lkxxtkctlphjfivepjlrg1&#xD;&#xA;xszdbbvxjrfxs2vrmmbfourpzcfmgppk33eightwors&#xD;&#xA;966fourflbfsk3&#xD;&#xA;1bskshtjseven5qlbjhqgzhbzxvlxsvtcmmzseven&#xD;&#xA;56two28cbhfsdcjsix2four&#xD;&#xA;6s5qcmvjltqeightslhnzmvbfvcmxj&#xD;&#xA;twosevenjxk6lhrkknnkq&#xD;&#xA;kjkj2lkkldqbgzhglmthree9&#xD;&#xA;ftxhnpms1onetwoxg2&#xD;&#xA;three9sixsevenmrgggztckzgzv7&#xD;&#xA;stvgmjgnine2vvsnjhlzkstwo5szsbvzjdzb&#xD;&#xA;v6&#xD;&#xA;threetwolscvhrlmm3r&#xD;&#xA;two17kblkphfninefour6six1&#xD;&#xA;one6fiveeight9sixjzljjfknrhkzxr&#xD;&#xA;dgpqm43xthreekxgspjzrzcsix&#xD;&#xA;2two8fourpppb2&#xD;&#xA;fiveseven5four&#xD;&#xA;5rttwofivefnmbkn8nine2eight&#xD;&#xA;43threeninelgnpzrdtbc1lbkjkvqrdcd&#xD;&#xA;1seventx&#xD;&#xA;nctwonefourjzgskmxjmq2&#xD;&#xA;rpzpht2tdxczzfthreeseven&#xD;&#xA;two1seven&#xD;&#xA;6bjztkxhsixkgnkroneightht&#xD;&#xA;9mqzkgmv4vxqrpf4&#xD;&#xA;49hlj&#xD;&#xA;46gv&#xD;&#xA;75sixfddn75&#xD;&#xA;eight87xzjkdpnnjjfqeight&#xD;&#xA;9pfcdhxbcrnpsnmvkqnsqsninedgtlmmc5&#xD;&#xA;xmfbn34&#xD;&#xA;99lvrrndpqcnhznn&#xD;&#xA;qsmxhxfph24three&#xD;&#xA;lql25&#xD;&#xA;8five1dhrkm&#xD;&#xA;twoninefourcxksqfmn1&#xD;&#xA;7eightdclrvn&#xD;&#xA;one2seveneight3ninemcpnmonetwo&#xD;&#xA;33fivefivenftbczsdstlxzbp&#xD;&#xA;9r97five&#xD;&#xA;5fivessskxvnt6qqbkkqrggxg9gsdtbptpn&#xD;&#xA;threesjdpjdkczjgthree6&#xD;&#xA;twojqm86&#xD;&#xA;bttrx15qfznmdncnz5&#xD;&#xA;ppckphrtzhstd3xvthzrxxlrrjtk&#xD;&#xA;qkm6ckeight7gnmqkltz6jsrgjhbck&#xD;&#xA;zdjjjlpmjtphbjpm9threeskqrphxbfqqeightone&#xD;&#xA;konesix1three&#xD;&#xA;four24391rzxtffour&#xD;&#xA;hsevenfive36fqrbjpfj7&#xD;&#xA;dxdcssixbcnp8two639&#xD;&#xA;hnvg2&#xD;&#xA;sixeighthmqkjjsix6tbvdhzone2vsn&#xD;&#xA;dfzlxq7pjmq5&#xD;&#xA;5n3&#xD;&#xA;twovjcgxdsdngt2smfxfqxeight&#xD;&#xA;ftpjlnvg5qshclfzqtc2eightninefivecsrgk&#xD;&#xA;zzgsjsjffpvcgfmjtnpkrsqlmpzlt9four&#xD;&#xA;4btrhpznzr8oneightg&#xD;&#xA;pph2one&#xD;&#xA;5seveneighteight&#xD;&#xA;31sfrfrcgmseven&#xD;&#xA;four7bdqgrhfive3&#xD;&#xA;nbrzbggpseven9prthjvknq&#xD;&#xA;3sixonefourh&#xD;&#xA;fourgkrpkzdmhtwoseven6txplz&#xD;&#xA;four84ldbhnkxjph&#xD;&#xA;6eightonesrb&#xD;&#xA;gnmckftk62jgsjxzpk&#xD;&#xA;bzctx9onetmcnzhxkrtchjgqxv66&#xD;&#xA;1three5&#xD;&#xA;27two&#xD;&#xA;34eightwox&#xD;&#xA;6ndgrbmfkfive2ksxfbnjbl7fkrm&#xD;&#xA;kxpz4gjmgcgzzq63five&#xD;&#xA;nfvmfrbc151one8nggsdqvm&#xD;&#xA;4clnctseven5nsn5&#xD;&#xA;hcrpbvqmmdbstlxccthkththreebm6&#xD;&#xA;gdnmh6cslzhjhdl8nine&#xD;&#xA;sevenninethreefive4bgknpbnine&#xD;&#xA;2sevent6three1&#xD;&#xA;2jbrmdxgpnine7&#xD;&#xA;nshlgtbkmcmgkmqone3&#xD;&#xA;dklhc9sevenrxxzzxltsnlltqcjrbgprnx&#xD;&#xA;gmrjhlvzppmklnl39&#xD;&#xA;kv86eight3dcdpp6pmdzcvsix&#xD;&#xA;fiveseven2sevensix6952&#xD;&#xA;3xrtthnsevenjxsxpzvc&#xD;&#xA;256nmzrlzbczv&#xD;&#xA;4dp7onesixvpcf&#xD;&#xA;25onesevenonexvnst4smvlfszcrv&#xD;&#xA;lcxncproneseven37five&#xD;&#xA;ninezjsrptfivenhsqxrdz7one&#xD;&#xA;cscdmnfrcxfqdtkmhkldgjlxdjqsxslhdzvvt4&#xD;&#xA;sixfnjnfkqm67blkmnqtwo&#xD;&#xA;fivethree7&#xD;&#xA;2five5ninegcmqbkpp61npkpml9&#xD;&#xA;3qktrxninefour&#xD;&#xA;qdhmxstwo44two&#xD;&#xA;21nine&#xD;&#xA;rbnineone3xppvtbmv3sevenvxkkgmgklg&#xD;&#xA;mcvzplmpvptwo38&#xD;&#xA;sv176threeone&#xD;&#xA;5vksixqsccgdkrrfourcgnpsfxbvj&#xD;&#xA;xxtwone6eight&#xD;&#xA;threeonespkbnsj9onesevenpz5&#xD;&#xA;fivenncrfvhfdsevengxzkxbkrklgsfvllrkbx4&#xD;&#xA;69kp1seven8dqkrx&#xD;&#xA;dmb9ccghdjjpjxfivehtwo4&#xD;&#xA;6nhgdkpdone&#xD;&#xA;tfvqdqdqcszxbrdmmrninesct2&#xD;&#xA;8sevenfour2eight8rskc&#xD;&#xA;cpmgffcvln9sjdsgfivesix5rppfsfmmqtffive&#xD;&#xA;5two7&#xD;&#xA;7threecrkljthreetwo&#xD;&#xA;6qgqzsdhprd&#xD;&#xA;959zgjscgtm&#xD;&#xA;fourtwoppfrdqgtseven9&#xD;&#xA;8bbchvoneeightr&#xD;&#xA;gtddrb1rznsdjtonethree5four&#xD;&#xA;8rrskfzlmlbrsninezdzpt3&#xD;&#xA;6njhmkpp4onefive8two&#xD;&#xA;4cqpnkcxjtwoqzqmjnqccfs256hcnqpfm&#xD;&#xA;nineeightseven62sixhlxlps&#xD;&#xA;dtqplzzf87threecthree&#xD;&#xA;mqptgzjxddxgxpjr5&#xD;&#xA;9194jbjjktwofive&#xD;&#xA;five514foursevendzxlh2&#xD;&#xA;6nineeight85zvx&#xD;&#xA;four8gsgrstfmdv99hpkfgptzqkhsmgsnlggrseven&#xD;&#xA;9three298&#xD;&#xA;3fpttzk35&#xD;&#xA;rbtckzonexkqmfxrnsbsrkqbq66sixkcqfzjfour&#xD;&#xA;sixkdcrrrppcsix399fccnsbhfxvfiveft&#xD;&#xA;xfjxbfvmbxbf3twokkcfrbcfbmkmhghsbzf&#xD;&#xA;9sixonesix3lqqf9&#xD;&#xA;eight3fourgcmp&#xD;&#xA;xjccxkhkvgltzqslmseven5twoqhcmpsixeightnine&#xD;&#xA;62eight8&#xD;&#xA;hzhccdkxb336&#xD;&#xA;gcsbmkdfmqvxtfj81&#xD;&#xA;two445nine&#xD;&#xA;xhrkgql8six41nine1&#xD;&#xA;5dnlcsjb&#xD;&#xA;jdqdg8gtgrctwo4fourthree&#xD;&#xA;five4five&#xD;&#xA;3threecggvthjv6&#xD;&#xA;sevenzrjzqhgtvtqvkp3three5sixhxdmfour&#xD;&#xA;2249eight6&#xD;&#xA;drt5trhdjqf3fourfourkfour4&#xD;&#xA;5oneone1&#xD;&#xA;threeseven5six&#xD;&#xA;45bclsgsqx&#xD;&#xA;6ggfjqls&#xD;&#xA;rhpmhfournrzg418onevlkcxxdrd&#xD;&#xA;fcvgszpsixthreegqqctvdqnfrbnlbmknlvgfour1&#xD;&#xA;twoxvrhmxjbbn2eight&#xD;&#xA;27eighteightsevensix6six&#xD;&#xA;veightwosix54bcvvtcgbqfzprp7four2&#xD;&#xA;9kthreeqntgvbb34693&#xD;&#xA;zxcdmfg48ftlhk&#xD;&#xA;1mhcctbmbzmfivefourtwo3&#xD;&#xA;two6vxsdfhgstslsix&#xD;&#xA;threesixmzhvfqsix5xhrhrvsfh7kpcrsp&#xD;&#xA;oneggkztrmsgrthree536three&#xD;&#xA;7seveneight81ronesix&#xD;&#xA;sixllrjlqtffqvtdjqhctt66four3twoone&#xD;&#xA;2zxqpgmgz&#xD;&#xA;7rfngpqkqgfivetwojf&#xD;&#xA;vvbfnnine3ngv&#xD;&#xA;59sixninelmhmqchlthkbpthree33&#xD;&#xA;1three6seven1seven5qntpbnsfour&#xD;&#xA;7nfzfsdxzfive8fjvllc4&#xD;&#xA;56seven5seven&#xD;&#xA;1fivegqbrdgths&#xD;&#xA;four32vmhvnk&#xD;&#xA;hvdjnmpqvqbnrcrclkgkrfseven6lgrvthv&#xD;&#xA;28xngctrvmnc4ntvxhmxfsj13&#xD;&#xA;onep1onecjjmxxtd&#xD;&#xA;9eightwof&#xD;&#xA;hzgmtfdj8nine7seven&#xD;&#xA;eightseven3&#xD;&#xA;fivepnhlninefive1lcftks&#xD;&#xA;122ninelrgmdgmqzd&#xD;&#xA;zjsix3&#xD;&#xA;7rffvg9hbjpx&#xD;&#xA;3h76&#xD;&#xA;fouronessbhxlcclkzmnnbksixlcdqtf3&#xD;&#xA;4fivesix228five&#xD;&#xA;sixrlthree1bzhddfbkrgxpgxfivef&#xD;&#xA;dxgqnkqfgq8&#xD;&#xA;onemcfourbmkhh5px&#xD;&#xA;fmtqjcbxznine3three&#xD;&#xA;qzkcxvnffg1gmhplhlffgtwo3onevg7five&#xD;&#xA;twokj7xv63six&#xD;&#xA;four58&#xD;&#xA;fvjeightwosixrbrgnmrrmdtwomseven69seven&#xD;&#xA;5fivefour&#xD;&#xA;6pg8twomrqfzkxrthree9&#xD;&#xA;7xqtqfrpprlvhnthree&#xD;&#xA;l35sevencreight4&#xD;&#xA;threechpctdgtq8fxspqtnvggkxtmeighteighthdgngnmc&#xD;&#xA;one16twosix&#xD;&#xA;threetwofour3eight1pvgcthree&#xD;&#xA;229&#xD;&#xA;ngcnthreeone7hqbbntqxeightkgtc&#xD;&#xA;qtgkz1ntone68&#xD;&#xA;nine2seven&#xD;&#xA;two1jjccnlrqlsdfvtgjmmhh5prfpcc&#xD;&#xA;onesixvtbjgdqmtg1eight&#xD;&#xA;77qkvdszsp9ctqndxzrjc&#xD;&#xA;rnldvcmks74355&#xD;&#xA;fourkljgznpqntwofoureightlc3zmljfnqnr&#xD;&#xA;8threetbv6cdjjbtmmxcfour4qlqjql&#xD;&#xA;jfkvbvjxjzk7&#xD;&#xA;7eight8vhsdrd&#xD;&#xA;onezdgffrmz2&#xD;&#xA;eightseven8&#xD;&#xA;7gjdsevenjsdkljn2fv&#xD;&#xA;kmst4&#xD;&#xA;3five8smctrhdhfninelzbrszmbdm&#xD;&#xA;fiveseven4ninevdfive3&#xD;&#xA;8jg6nine4jmmsbpbnskoneqxgjrphhf&#xD;&#xA;mgfourfour3hgmrzkntjm2hxrrfsghnone&#xD;&#xA;ninecqmg72&#xD;&#xA;ldthtljblpl3fiveonervtxnxczfx2&#xD;&#xA;9sevencsevennscmbjgthree&#xD;&#xA;7lnj9four&#xD;&#xA;fgtwonexmkvkcgpq36sixsmfnxjs&#xD;&#xA;qgmfmnh6twoeight&#xD;&#xA;56sqrseven&#xD;&#xA;183877&#xD;&#xA;ntt1seveneight513&#xD;&#xA;7three6dzdrs&#xD;&#xA;8sixsevenfour&#xD;&#xA;mzfhdnhseven4eightvjsdnxlonenfzlcxr&#xD;&#xA;sixzdczsbtq29one4eight6&#xD;&#xA;jmxcbmktjzeight5fivenhtzfsdqbx&#xD;&#xA;four2rvlppone258&#xD;&#xA;fivezvlqr236nine&#xD;&#xA;262&#xD;&#xA;58six2nineone5&#xD;&#xA;twoeighttwo3ktzhmdvlx&#xD;&#xA;64nsjgqsqkhfqmfk&#xD;&#xA;foursx18&#xD;&#xA;gklzjvvv93zzmzgpn&#xD;&#xA;onenmcvr6&#xD;&#xA;qsnmlbmlr6&#xD;&#xA;sbtwonesevenfourhgltwofzhzmbsrfm6two&#xD;&#xA;8fdhxeighttpcjkkmgsgnpnvsix2eighttwo&#xD;&#xA;5pvxnxxdfourfour75&#xD;&#xA;85vtsgkn1kfzkszmbld4cpgrqsfive&#xD;&#xA;sdbzkzp1dq5lk&#xD;&#xA;28161twodfznxckr&#xD;&#xA;xfpgnrlfour61&#xD;&#xA;kzkkp65qtqfppc7f9&#xD;&#xA;twospplzdrdfvsixsnldtwotwo29six&#xD;&#xA;9fpbm&#xD;&#xA;3one83dlvdr&#xD;&#xA;9rvbtwo25sixkzlxfkg9&#xD;&#xA;8jbmfbfsxrnxk7oneninesix&#xD;&#xA;3798&#xD;&#xA;jhcqmfive9&#xD;&#xA;nine35&#xD;&#xA;596&#xD;&#xA;nvzztnine2vhhchqkzfjzmkgjbzlxhvtdhddnr&#xD;&#xA;5bltnjlmt12threenh2&#xD;&#xA;eight5sevenninepgxvhflb4eightmxv&#xD;&#xA;xtrct7fournfivefourfive&#xD;&#xA;dhbpsnpxsglnt5vsnclxhnntt61two&#xD;&#xA;twoonekntsmsd81fourfourfive&#xD;&#xA;gpnceightdx5pklsp79x&#xD;&#xA;four5fszlnphhxvhgbmfcdkdbgbc7&#xD;&#xA;xbxtjllpr9threeninesixbbtkn6&#xD;&#xA;p7&#xD;&#xA;nine644two5&#xD;&#xA;5zzzlmspbcx9vfdllvqtl8five&#xD;&#xA;four2bxmrthree&#xD;&#xA;7rhgfnzqbpgmpnfz&#xD;&#xA;threejhfmbmxzp469&#xD;&#xA;74ninebmtpfkzbcg5nine&#xD;&#xA;fflpg34two25lvnmxvqlv&#xD;&#xA;jtqtnthxqflp2onesix39&#xD;&#xA;9sevenninefd8qpfiveseven&#xD;&#xA;28mb5&#xD;&#xA;lflcphkxqqnzhd2five&#xD;&#xA;3seven4fftnss&#xD;&#xA;ninezxhxqxxpblm9&#xD;&#xA;4ninevgpmxxmqlf8&#xD;&#xA;sevenfiveonesevenfjccpmnnninesix3nine&#xD;&#xA;qmkvt6pxbdcbrcsrgppzptzchkmone&#xD;&#xA;2sixone&#xD;&#xA;6dzskdbknpsix&#xD;&#xA;twonpqfsvbmqgeight23ct&#xD;&#xA;4sevensxdzsfbmmmdrdjtpbh&#xD;&#xA;sxkpmmhsix9five7&#xD;&#xA;fnxtgfrltwo67threepvbsixzvj&#xD;&#xA;54jmvmdbkltqsixtmccscsixeight&#xD;&#xA;6fivefourrbshbc82jrfm2&#xD;&#xA;dhlpvhzhms6&#xD;&#xA;419bhbcdsvftxfvvkxcxprksjs4&#xD;&#xA;sqrq17nine&#xD;&#xA;84rjcbktz8hrplcqsvhqqnnqnsevencjhone&#xD;&#xA;gkmljdk2dgrlptkxdsix3four599&#xD;&#xA;cnjpf818sevennine&#xD;&#xA;8cvg&#xD;&#xA;3jqbbpfpxmpkrhfoursix&#xD;&#xA;9zkrhbmzkbzlcnxlgdsixthree8&#xD;&#xA;nine9kvxeight2zqvzhgjzjz&#xD;&#xA;fourbglmlqzgvzhjrmz2nzqxlqseven&#xD;&#xA;seven4five8nine44eight&#xD;&#xA;onegnine6&#xD;&#xA;qeightwosixfivesevenzmjfrqvnsbnqlt7four&#xD;&#xA;eightvrshp9xnxlgqcnninegvbj&#xD;&#xA;ninelpbvs9three8ltzvxnd4&#xD;&#xA;nmnlzone3grqbzcdnpxsbcbzxn4fjptnsrqsqgsdcv&#xD;&#xA;18fourcqfive1gccxg&#xD;&#xA;gfglone6bqsqjmlftcqpqmmqmglskzfourvkhd9&#xD;&#xA;5cxgkn1g&#xD;&#xA;29seven9ppr&#xD;&#xA;fiverkmhxvnbp3lvpeight1one&#xD;&#xA;77four5dsdqzvt&#xD;&#xA;gvvpbone23&#xD;&#xA;twolrjs56one&#xD;&#xA;six2745six&#xD;&#xA;kbxplzpsixsevenseven5one3&#xD;&#xA;threexzrcfgffkjsix9zgdseven56&#xD;&#xA;onetrqcfl6&#xD;&#xA;three23nine&#xD;&#xA;four2mv&#xD;&#xA;xzfnzkmeightthn6twotwoeightqmf&#xD;&#xA;hxxxldcvj99three5qgmllbtrsq&#xD;&#xA;6zcszjbrzjpgrvfivemnzkpbq2six&#xD;&#xA;6zvtsixone73three&#xD;&#xA;threeflxtwo5fivefhbjptgfjmgbhpmbjmsv&#xD;&#xA;5nineeightfourd&#xD;&#xA;five26five7sixthree1three&#xD;&#xA;fzvsixsix3mxxhseven&#xD;&#xA;twoccxdqqkdvc2two9ps6threefour&#xD;&#xA;447lkkoneonefour6rx&#xD;&#xA;8seveneightwox&#xD;&#xA;sgjv21&#xD;&#xA;soneightkmtps8onesixvpsdcfbbz&#xD;&#xA;8pzrtoneffhg&#xD;&#xA;mmzeight631&#xD;&#xA;5fonefive&#xD;&#xA;foursgx8fiveltczmccpzx&#xD;&#xA;sevensdbhnpmjninetwovlv1three&#xD;&#xA;64qrjdtpxbxdbcqmmlqtnine6sevenfxhcrjnine&#xD;&#xA;1seventhree&#xD;&#xA;ktmfour3&#xD;&#xA;fournine8skzxtftwo9h9&#xD;&#xA;bjq8&#xD;&#xA;mrshhhzsixcxsxxmbh1bone9fivelsplqv&#xD;&#xA;7threezvgxdvrthree7227&#xD;&#xA;znnvfive5mctxdfive3j4&#xD;&#xA;five2three8&#xD;&#xA;gdtdqc9nine1&#xD;&#xA;three3eightgnsxrmbmxld9six&#xD;&#xA;zsgmcpxxvseven7onetwoseven6&#xD;&#xA;8n3919hfiveoneightf&#xD;&#xA;3rfrzmlfsjxthreefour&#xD;&#xA;dnnshdvxdl6onendg27&#xD;&#xA;66lpbz&#xD;&#xA;sevenlkjpxthree5&#xD;&#xA;8clqlplvljone5hfh81&#xD;&#xA;fourldvjsixfourfour5xrmcnf&#xD;&#xA;9nine2&#xD;&#xA;4one1&#xD;&#xA;4vzjgncrztvstcf9one4&#xD;&#xA;four37&#xD;&#xA;4sixlqpnqxqtrhpc3&#xD;&#xA;8threejzg&#xD;&#xA;znxccm8&#xD;&#xA;one8eighteightkcvnqjpsp6nine&#xD;&#xA;fivesixgc74oneseventhreesix&#xD;&#xA;5twohshtsdtqk2&#xD;&#xA;hzmchfourvzjgnt2threetwo5cgfld&#xD;&#xA;one9three836one8nk&#xD;&#xA;ssslsdftjfgkpzkln5&#xD;&#xA;xhsxxkzk1x2tzbjthsnsix&#xD;&#xA;8nineeight3njq&#xD;&#xA;ninethree5eightbfour2&#xD;&#xA;five56sixclxjqsjseven8eight&#xD;&#xA;three3cninenz&#xD;&#xA;lt3onevpkgsixsix&#xD;&#xA;4pkbmgtwo6zmvn71eight7&#xD;&#xA;2eight6cdd83&#xD;&#xA;5kvp3zhzq&#xD;&#xA;vtcmdkkcmnmf1two&#xD;&#xA;nine2nponeoneseven&#xD;&#xA;xm1twofoursevenfoureight&#xD;&#xA;ggkvsljtddcmznlxlqb4one32oneightppn&#xD;&#xA;onehdq785&#xD;&#xA;vzthreezjbdrlvhglbbcvlfk5&#xD;&#xA;eight9smt1sixsevenckqxlbvdzone&#xD;&#xA;one7fdcbzjtfhbps9oneonetfftbneight&#xD;&#xA;3sixfgqbsngnd1zmqbxfllbp&#xD;&#xA;roneight28one8fpzmkhvdhbqlrfive&#xD;&#xA;4five2four453ttlvfqxb&#xD;&#xA;five2four413hhnts8six&#xD;&#xA;xlfpxbzrbphb3one&#xD;&#xA;eightone8nineeight&#xD;&#xA;1zprfttxqmtbhzckcfoursix2threenine&#xD;&#xA;7sixzqrjxn92pnbfxzbrnmvrnpjpdone&#xD;&#xA;pvlfeight1xkgrvczlcfvvl8kzcktkjbj&#xD;&#xA;four7phjzlzn3two3two9seven&#xD;&#xA;1tkcdvdtj7nqfsrnmfzghmkrqeight&#xD;&#xA;36fourxfdgrprrdgmjczxb&#xD;&#xA;five5fivefdkgnkfgd5&#xD;&#xA;5seven5sxlkbldznz53three8tmkzlrt&#xD;&#xA;8dkxkfvjkprxtjlh5tjvjm2glkpbmhjd&#xD;&#xA;seventwo3&#xD;&#xA;bgssljzld2one5seventhree4&#xD;&#xA;sixfourrqzdbdhhhc7lkxqbtsseven55&#xD;&#xA;6threegtwo7fivesrbvfk&#xD;&#xA;2mpxkrtjphdseven&#xD;&#xA;14seven9dkk&#xD;&#xA;85dmtjqkchp7two4&#xD;&#xA;hvqfbchqhpbggrqhf4ps&#xD;&#xA;dzdknbdceight72fourcmfvsrzt&#xD;&#xA;xmvgjjfourfourmjmkh5onefive8&#xD;&#xA;qdfreighteightninecdxrtdbd7&#xD;&#xA;mxlhxlbvbndqfzmseven34four&#xD;&#xA;432three5vqhmjzgvghnhhg&#xD;&#xA;ghczftpkttwo4sixoneone4brf&#xD;&#xA;kbbzcpsqsl7qdlgff5fourfive6jk&#xD;&#xA;v8nxzpjxntcbtwonrcgztsthree1eightpfdsp&#xD;&#xA;7zjdzbnrpltfivemgcsjzrdjskhfmbgvlr5dl&#xD;&#xA;9kpbzzr&#xD;&#xA;8386six3mzh3&#xD;&#xA;41nineeightfive&#xD;&#xA;twotwo5threebvgmmhqrlqltqmndhveightsix2&#xD;&#xA;58drxrgkklm&#xD;&#xA;8two48six3sixthtwo&#xD;&#xA;eight88msfnone87nine&#xD;&#xA;four5lvxfhktrconexqzqvl&#xD;&#xA;six8mrlccbeightonejnzbdkm4one&#xD;&#xA;oneseveneight366xzqmnmfvvrph&#xD;&#xA;joneight7nine7five&#xD;&#xA;5fourtwo26onefivegsnbcjj&#xD;&#xA;cpjnvhnzxsevendbnblfkpx44lzn88&#xD;&#xA;zfmdcsfkktwogxmrsbtwo2six78&#xD;&#xA;ninetwo59foursevenoneightsx&#xD;&#xA;vjbbphb5dddvksevenpmnmtjvzdvxkkbcqxbb&#xD;&#xA;9ccgtrznm4&#xD;&#xA;zplpfivesixkjfdvrv6rfmqk&#xD;&#xA;hfxhpsxgxjfdbfmjb6one&#xD;&#xA;threethree9&#xD;&#xA;six3seven&#xD;&#xA;seven286&#xD;&#xA;bnkrghgbkzdz29two31&#xD;&#xA;gvlzrhntvseven3&#xD;&#xA;twosevengdkzgv6&#xD;&#xA;rddtz12five9znvtsljztbztprthreeszkfhh&#xD;&#xA;nfivesevenhfpklnxqb4nineonermtfsk&#xD;&#xA;zzz2onegpthree4fdnqxrtcnh8&#xD;&#xA;4xchnsevenxnkbrdpzsnine6&#xD;&#xA;hveightwofourfive8&#xD;&#xA;8one3&#xD;&#xA;7chfpsbh1two&#xD;&#xA;two2eight5gchbxqvrmdfqvghtnjssix1&#xD;&#xA;zfbeightwo3&#xD;&#xA;qhjnfxpfoursix9five&#xD;&#xA;8fourrbrrjqqph&#xD;&#xA;five5threethreezfvskmsv76&#xD;&#xA;sixvtjnktt4&#xD;&#xA;5cndcht2fivebdnxcnzzmfninenineqzktj&#xD;&#xA;qfzclldsvzvcdqfxhtqqtknine527&#xD;&#xA;onefjrmmfqvgnxnjdtkdmk25zghnp&#xD;&#xA;hvddcjnoneeightnine9eight&#xD;&#xA;9lxpszk&#xD;&#xA;17fourfiverfnbmkrxlvone&#xD;&#xA;qxvdlrxq89vf&#xD;&#xA;qeightwotwo2&#xD;&#xA;rzmxzgnzljzssnxscvv9seven2kbnineseven&#xD;&#xA;sevenseven8&#xD;&#xA;rkhkone8four&#xD;&#xA;zn68&#xD;&#xA;5pvfjmjxthreeninevtj88&#xD;&#xA;51dtwo5ngvxnmjeightgbhzxbd&#xD;&#xA;two6kxkvscbxcg34six3&#xD;&#xA;qbn1&#xD;&#xA;hgxgtwoqtmsqbv3&#xD;&#xA;threethreejmtjk18two&#xD;&#xA;sixone4fourseven6zcgpdqps&#xD;&#xA;fiveqptd8gtjfour1twothree&#xD;&#xA;89fivefive4&#xD;&#xA;sixvnvmdmfeightcbbvbrkffqstwo7&#xD;&#xA;three4fivefive5klxvsbhslzsix29&#xD;&#xA;two9sixhncrcvxmf&#xD;&#xA;rsp146&#xD;&#xA;eight2jtvps&#xD;&#xA;7four6&#xD;&#xA;77p1znpskm&#xD;&#xA;bbdvfhqmxddlsvdpmtvctnine135&#xD;&#xA;dlclxtkxk85bn&#xD;&#xA;bxbjslnrfk6&#xD;&#xA;51zfrtvmcbkkrnd7&#xD;&#xA;27fivetwobbssnklg&#xD;&#xA;twojxdksqkm9ninejninekcbdgnsq3&#xD;&#xA;nineninebsbd8&#xD;&#xA;sevensevenggddbfxqrmonethree744&#xD;&#xA;srtbzcbsmfivetwothreejvzjzxqm1tjnjldcxnine&#xD;&#xA;nbsix32&#xD;&#xA;25144spnmfvvj1dxpqmhsldk&#xD;&#xA;5two4mrqnpxzs7foursevensevenr&#xD;&#xA;fourk9zszmnbvmkdrz&#xD;&#xA;lpqseven2seven&#xD;&#xA;hcjgtjcxh1dskx&#xD;&#xA;ssrnf2ninenine6ngbhfhdqsnine&#xD;&#xA;cz82jhmgn14cktblcl&#xD;&#xA;kxjzflkkbx53nine62one&#xD;&#xA;hbcnpbmfour1two&#xD;&#xA;ckjksxthree346pjtr&#xD;&#xA;ccslpmqnine27twodr&#xD;&#xA;cptwo5twoggmrjvl15eight&#xD;&#xA;4vlktln5kqfsnvrbjbszqzclmnkxseventhreefive&#xD;&#xA;one2eightwopp&#xD;&#xA;2sixsixone5&#xD;&#xA;klvsngvv38tcxvhpdhh5&#xD;&#xA;fivefllgljkdg9ndlkpbmgbrndqbpxqdk&#xD;&#xA;7ppkvstbtnvseventhreessd1three9&#xD;&#xA;threepnrcmb3&#xD;&#xA;thrqrcmzpzt7nine1three&#xD;&#xA;jvgrqgbcshhlnqrl2vrlppxbnjfrdtwofbsdvt&#xD;&#xA;rnhninezxbrlmnlczqnneightsix9one&#xD;&#xA;ghvqdxkqqfthree17&#xD;&#xA;dthreeseven2&#xD;&#xA;rkxfthree7nmfive6&#xD;&#xA;6vhnh&#xD;&#xA;13brdgbrdsvthreethreerttfkr&#xD;&#xA;ninelgfdc7&#xD;&#xA;88z9vzscqthkgnhmztjnhthreeseven&#xD;&#xA;1nine3mtgrfive8nine1&#xD;&#xA;thh5fivezfmtlsnvtdkfour34&#xD;&#xA;26six6cbjdssevenq2tl&#xD;&#xA;gxxnhsxqvjcvssrbrhbst6sixvcchxstbpb1ppqdbx&#xD;&#xA;vninexhkjkmzvhfpvcd7ninezzldthree&#xD;&#xA;2twozknrxvcsj&#xD;&#xA;3193spfourxcbdnf&#xD;&#xA;84six4vc1eightsix&#xD;&#xA;zljb46four6six&#xD;&#xA;sixfive2seven1&#xD;&#xA;1fbmq9fourmhbzzkhctp6ninenine&#xD;&#xA;onefourtworckjqzhqseven5seven&#xD;&#xA;five973knlxmtmdone8prtqlsltwo&#xD;&#xA;2ncgbgpq&#xD;&#xA;3eightthreepknbcs58three6&#xD;&#xA;6fivesrgqxhnzfouroneqpmgpmzgfoureight&#xD;&#xA;mphrj33five&#xD;&#xA;8sixfives26sdscdjtpchmh&#xD;&#xA;four64mtlxmnsjbtdkpmf4&#xD;&#xA;onefivenine9nine81two&#xD;&#xA;vfc9nqttbmbdkonegclxcgbxkx87t&#xD;&#xA;sqnzdrcs8sevensix6sixdjcmk6&#xD;&#xA;7npppqmrmblzjqckk8fourbpxlbtwonine&#xD;&#xA;nbkklkvpl2smlqbh&#xD;&#xA;37eighttwo17fh77&#xD;&#xA;eight7ninekkbvtwo&#xD;&#xA;eight18cmzzdpgl5&#xD;&#xA;sixdc17nine9ghzpdpnxcbxvztcrd&#xD;&#xA;fourfivelrmch54&#xD;&#xA;jbqbpzxbbdfiveeight9jnzfdh5xfmhhrkrkds&#xD;&#xA;146two6fourclmcllhl&#xD;&#xA;222dqgtptqqn&#xD;&#xA;gvhninesevenfiveonefcvnlmfcvjvf5&#xD;&#xA;9xgljlphcxeightfivehpdlfrmd1fmqhrnvbzboneightjd&#xD;&#xA;8sf3five6eight&#xD;&#xA;zrprbc8&#xD;&#xA;gqb6sixninerpsrpnlldteightgn&#xD;&#xA;2jdlxzk&#xD;&#xA;hfrbqn4zbpxqb81tlfxgxdvzz91&#xD;&#xA;qtdnxgmjjstlc1nndsnbbcdm6nine&#xD;&#xA;z7twonezp&#xD;&#xA;two17sevenljskthntjzxpkjrkc&#xD;&#xA;fivelvfive948&#xD;&#xA;sninehxqlkmv7oneonedbdvztzgh8&#xD;&#xA;2fourxcrkrcvn&#xD;&#xA;clh4four5htj&#xD;&#xA;hdkx4eighteightsix1kgtbb&#xD;&#xA;nlbsqhkltvmzs2njschfbmsl3fivensztjtwobxkfn&#xD;&#xA;fnrg3837five&#xD;&#xA;vxcldjmjxxcqntqcqnninefivestbbjvptfvkbr9onetwo&#xD;&#xA;4six7two&#xD;&#xA;8five5sevenslfqtblfiveone&#xD;&#xA;26ninemhvqkjgcvflplncfsixtwo&#xD;&#xA;7eight523&#xD;&#xA;9fiveplfdp1qhqhj15t&#xD;&#xA;three3eightrzvccr4h&#xD;&#xA;9vhmkkjfhtfjtwotwotkfvlhvs&#xD;&#xA;vxoneightczdfl4&#xD;&#xA;3one2&#xD;&#xA;threeeightfive2four&#xD;&#xA;gksfxtb4&#xD;&#xA;1jjgdldklznbktwo59&#xD;&#xA;761sxvprrzj2kxsmlmtpbqseven&#xD;&#xA;681q&#xD;&#xA;84ctsbf1six&#xD;&#xA;fivetwomfgplcfgfive7one1vgbz&#xD;&#xA;rfnqnnmsdcj6foureightfjfkphqpktwo&#xD;&#xA;9vntpmfsevensevenfour&#xD;&#xA;7zvchbn6two9five&#xD;&#xA;fourseven7&#xD;&#xA;2lvtkkbhtjeightfour89&#xD;&#xA;5nine5threemgsd&#xD;&#xA;933nxone5threeone&#xD;&#xA;2dtbbmghgxvkmtvnlgsxjlgbc&#xD;&#xA;1mcrlzhvzrc2&#xD;&#xA;ftwonegsndgxmbzn6one&#xD;&#xA;916vfvzvh8twolvhvlc34&#xD;&#xA;dtk7eight6c6&#xD;&#xA;kbhjg6qkdgh8rqlmstq4&#xD;&#xA;eightseven8&#xD;&#xA;bhlhcphznb92two&#xD;&#xA;q8d&#xD;&#xA;375sevenvhrhkbtbvncmqqmpxdhqzzggvr&#xD;&#xA;9onefour1nhmjb&#xD;&#xA;hqckpzrvgmgqjmvsrjhqx8twodgxkbh&#xD;&#xA;5grdsbtp6onezrkdvpdqt2&#xD;&#xA;tdgkr4&#xD;&#xA;foureight24&#xD;&#xA;ktds45zvjd&#xD;&#xA;eighttwo58lldklbmxn91fvlqllnxl&#xD;&#xA;threefive3bdmfbrhfklhxjvdgjxbp1&#xD;&#xA;hqpfgvk56oneone8&#xD;&#xA;two32fivetwo1nklfhjfffthree&#xD;&#xA;77jggmjkbqone&#xD;&#xA;6fckfqeight&#xD;&#xA;fivetwo8&#xD;&#xA;7five7threethreeb&#xD;&#xA;twosvbzfmv1fourtwoeightsixfive&#xD;&#xA;ninehninebgjnknth5bhzqlvthree6&#xD;&#xA;onefrdv3one1&#xD;&#xA;five35&#xD;&#xA;four3three3six9four55&#xD;&#xA;xbssqpvjnine9six9threefivetwomjdvmpxrh&#xD;&#xA;ctroneighttwofive3npxgbhfsix1rjnl&#xD;&#xA;8ckbzlmsbfxdn&#xD;&#xA;51gckxqqbnkntmvx1ltfmdvnlcjnine&#xD;&#xA;eight7gkql5&#xD;&#xA;sixjghxscppnfive23284&#xD;&#xA;eight7pgqxvsix&#xD;&#xA;46eightrjhgdmvf5&#xD;&#xA;four4bmjzzjqp1rv523twonevm&#xD;&#xA;3sixseven81oneeightwocr&#xD;&#xA;sixmmnqkrfplg7ztrpsixone4six&#xD;&#xA;1sixfive5nhrq9&#xD;&#xA;six8threeoneckbvqc9mzhb6nine&#xD;&#xA;33sixdfzmds12jcvfour6&#xD;&#xA;1cdlflvqhrkqpktdnnsx7six8eight7&#xD;&#xA;8four18&#xD;&#xA;tpfourvblonez8six&#xD;&#xA;fourone2smjpvclnine&#xD;&#xA;99zdtdpbbvhnninefourvzfmzbscdldhxtcjfh&#xD;&#xA;fzjeightwoeightnineseven6&#xD;&#xA;twonine2&#xD;&#xA;fourseven1eight&#xD;&#xA;2x3one&#xD;&#xA;qbjc1jtnbpdbr2six3&#xD;&#xA;sglmt84five5nine&#xD;&#xA;sixnljjqh4foursix&#xD;&#xA;4nxjgs79six&#xD;&#xA;lhkpzgzjr3z7&#xD;&#xA;onefourflllxbtkpvgfive2&#xD;&#xA;sixrdr1twoeight165&#xD;&#xA;1dxvjdhzb76915&#xD;&#xA;44pxzzttvdc185txvrpxq&#xD;&#xA;4fourfgllhzfz&#xD;&#xA;nxssptkdldkpchnseven9522nine&#xD;&#xA;nine7fivefivefffvqpvsqzsvnvlzfvfs2seven&#xD;&#xA;bzphzhgf2xrlqjgonefour3bclmhtlzbmddrq&#xD;&#xA;vsxf7eightzzndgfourfour&#xD;&#xA;rqbhb14eightthreethreevkjzhjlkcmfive&#xD;&#xA;sbkrlm3nine&#xD;&#xA;zkzlqfbzscndtlmn14four9bsscd&#xD;&#xA;six33&#xD;&#xA;1gbcgnpfnseven7plppdqone3smljtjlkhj&#xD;&#xA;9jsmdjshtzm92stx9onesd&#xD;&#xA;51four4two3one1&#xD;&#xA;bxkpcpcntkflxccsixseven1threengtrrp&#xD;&#xA;4dsdllkqnpxglbseight&#xD;&#xA;7threetd3onefour&#xD;&#xA;3vcnzndxfhfzvncfivefllrqvndtx964x&#xD;&#xA;nineeight1eightgqnzfhqkzgvfvctwo1&#xD;&#xA;6fourthreeseveneight&#xD;&#xA;eighteighttrhtplssvjnnkkreight4sixoneseven&#xD;&#xA;43hqrtctwotwo&#xD;&#xA;kcxfvhjksix3six2jbkrlmtwoseven&#xD;&#xA;43sevenpvqh9eight7xcbvnckrkshdx&#xD;&#xA;sixfive3745three&#xD;&#xA;hmxfmzqdpfzjjzdxsix8472qcpbrsgx3&#xD;&#xA;threelnzgs96five1&#xD;&#xA;1dftdbtgjrpfive3cztvmxkcxh&#xD;&#xA;pmrfive4jxfxq1&#xD;&#xA;eightclrzz981492&#xD;&#xA;mscl2eight3&#xD;&#xA;twovb8four7sevenfourkmzpdmpgxj&#xD;&#xA;59onefourxnmptgtcone&#xD;&#xA;6gsvxlbqspvzpsq&#xD;&#xA;eightthreesixtworcmpjkfvnsevenseven1six&#xD;&#xA;ghmflkhprkthsix9&#xD;&#xA;441fourfcvxonefourhg5&#xD;&#xA;four795seven&#xD;&#xA;tone11&#xD;&#xA;22seven9two&#xD;&#xA;5seventwo2&#xD;&#xA;fiveone6h&#xD;&#xA;936sevensixnine1lkp&#xD;&#xA;62kvhcg&#xD;&#xA;six19&#xD;&#xA;td25&#xD;&#xA;9two2four4fourmeight&#xD;&#xA;one6twosevencrthreeseven97&#xD;&#xA;1kttqbqkzvvr7265six&#xD;&#xA;65rzmfpfqjtzb11m1eight&#xD;&#xA;seven1rrhpxjqtp&#xD;&#xA;plktlvxkpkndhx66fivefivexkh&#xD;&#xA;tttwonefournine9oneonesplmp5d&#xD;&#xA;gkbl1fbn3two97onetwo&#xD;&#xA;1seventqngll&#xD;&#xA;dqfiverscjjrk7&#xD;&#xA;4sixfour4onethreecvbj&#xD;&#xA;24x6qhgtsxtrfh&#xD;&#xA;h6&#xD;&#xA;fourfour3three&#xD;&#xA;8hrdbnvxgndthhpmrgm&#xD;&#xA;ggzjfour8pxdlpx&#xD;&#xA;rnsixnine9fivensxfzzgzlseven&#xD;&#xA;sqzseven7&#xD;&#xA;rcpkzht5&#xD;&#xA;jxhtrkzl7eight3eightn68eight&#xD;&#xA;eightfive24&#xD;&#xA;kgxv7kclnsscsmqtnmv&#xD;&#xA;foursix2chgckldprp3zqntzscxfc&#xD;&#xA;sixsixfourone3tnbpxbmgqccncgxxnine&#xD;&#xA;oneeightkgsbdthreefivepvrsktvhrnine5s&#xD;&#xA;4vtpzghfsj&#xD;&#xA;7four1lttzxpzcbtqqdthreek&#xD;&#xA;five76&#xD;&#xA;vlqvvdhhnfzfssvthree3ccsdjhgc3seven&#xD;&#xA;2nine8six&#xD;&#xA;lddxjsczqkd26g5jpvdlfour&#xD;&#xA;1twotwofcl&#xD;&#xA;sltfz55knrfvhhbbeightsevenninesevenfour&#xD;&#xA;27155bvv&#xD;&#xA;dxjzmftwo2vnljlsthree3three&#xD;&#xA;twoqdpzhjhbzksix49dhdfq&#xD;&#xA;three2fivenineqbxkgfivefour&#xD;&#xA;qnpsfq8twoonevsjffive9&#xD;&#xA;gqvvmhxgx6gdsqmgccrmzrzltwo81szbnbkxt&#xD;&#xA;2one1czgjvtcgxfivenqsfourthreethree&#xD;&#xA;ppcspzrnnssvnht9hdfoursix&#xD;&#xA;mmqrzdkmt7sjqgsrq9rhxpgpsixgkjflnht&#xD;&#xA;57foursixfive4fourfive&#xD;&#xA;tjrfj3qldspjklvdtcb6ninefivejmbntcthree&#xD;&#xA;cgjnhsixsixsixfive7&#xD;&#xA;eightqdqgjppcfive7fivexznfsmtk&#xD;&#xA;fivefive864scrf&#xD;&#xA;six95five17threeslktfgd&#xD;&#xA;77mrrjzc1cbnkxfkxcdmxsmtwonet&#xD;&#xA;sxmsjccjrseven45&#xD;&#xA;kjpsn1eightccctxthreevvffseveneighttwo&#xD;&#xA;5twoneqr&#xD;&#xA;3threemvlqpvhdqgtqseight&#xD;&#xA;jqrxrqlz93ninesmppvdhtxk5five8&#xD;&#xA;threesixsntqreight593nine9&#xD;&#xA;fouroneznpfive6qmn8&#xD;&#xA;eightfive3sixxrrjgzlb&#xD;&#xA;gds345twotwotnjrnhjxdz&#xD;&#xA;27nprk7&#xD;&#xA;eight1three2onefourcfctvmhnqlfour&#xD;&#xA;1fourvjgkpdrsj4kd2ncd&#xD;&#xA;nine85ncsqbrmdtxbtrjxgztq&#xD;&#xA;twonineeightonerdnkjkrbpsbzcpone5&#xD;&#xA;nine8lkkvxfvlsixseven&#xD;&#xA;49three9&#xD;&#xA;jqmzthzjjseven5&#xD;&#xA;seventwo9z7four5twohstlzjx&#xD;&#xA;bzvbvsix7&#xD;&#xA;2five4&#xD;&#xA;fourthreesevenfour2nine1fivezspphbmjv&#xD;&#xA;7skjhonejhklktvzjflnineonemmgvnnine&#xD;&#xA;pmgxshqpjhn9qptllp&#xD;&#xA;2nine5&#xD;&#xA;fourqpzjrtttssthsxsq1jkrlnkk&#xD;&#xA;eight53njhcfhbjfthree3ksgrrj&#xD;&#xA;cgmvkqlcgzgfqxmgkfdzxxnxjgsd6eighttvggmfbdvztwo&#xD;&#xA;onefour8txkkpvfourzbhpsnrzleightseveng&#xD;&#xA;49z2six591one&#xD;&#xA;768five&#xD;&#xA;xgkfonethreexnlcptbgxhnine4fivetwosix&#xD;&#xA;6ghccxxjponelmxeight4&#xD;&#xA;3ninedlkvcbfmd2ktmjxsgdgr&#xD;&#xA;3threefourxcgnxhkqkjbdzb&#xD;&#xA;49eight44rlhg83gktmtm&#xD;&#xA;fnbnnpvcthrsjxnqdn9&#xD;&#xA;ldrfhknine3394lgvseightwoj&#xD;&#xA;zmpsc3lzlkmqjc5eightthree&#xD;&#xA;llpmmfsmt8llknhrn&#xD;&#xA;onedvc3sixxx9four&#xD;&#xA;148eightq6&#xD;&#xA;95one9sevenfourfour79&#xD;&#xA;one9eight78gnrthxbn&#xD;&#xA;95xzzlpjzqdtonezfntwo6sixf&#xD;&#xA;eight1sevenn8bgnmnxbmdk&#xD;&#xA;1sixseventhree2&#xD;&#xA;twogjprzznd9sixsevencpfbh1&#xD;&#xA;gnbtwomtltppkxxtwonlfxsbzjtt4bjlfxlqhlx&#xD;&#xA;three5oneoneqd3bcjgl&#xD;&#xA;pzngtc2four4811&#xD;&#xA;nnlqscgg8nine7vst4three&#xD;&#xA;fourcdqc7vvqhpgqlkjsevenfivefiveseven&#xD;&#xA;5sixtwo9sixqmxxgjvjqjtworlzpv&#xD;&#xA;6dkknsmfmnq&#xD;&#xA;2two74five7&#xD;&#xA;four3vvfskp&#xD;&#xA;qqvpdttrfiveseven6&#xD;&#xA;tbgeight8eightsix976&#xD;&#xA;sevenninetwo3jdone&#xD;&#xA;three6seven7nine82&#xD;&#xA;fxffmkjn2sevensix&#xD;&#xA;5xzbf4bjqfrfourpjhscxz&#xD;&#xA;5eighttwoeight7fivex1bnfpr&#xD;&#xA;1j3262&#xD;&#xA;two1fvxchkcdtqctph&#xD;&#xA;vgnrqn4three&#xD;&#xA;plzrk3tmqpxnhpkq6four&#xD;&#xA;four5eightone6threedbnjkvjvzxl&#xD;&#xA;bxcqcdnjjsz66gnxbhcct2nfhqlbs&#xD;&#xA;twovvqb9pxrxkmflzqeight&#xD;&#xA;86&#xD;&#xA;eight9eightsevenone2&#xD;&#xA;dclk16seven&#xD;&#xA;lzs15four&#xD;&#xA;265ninetzpnbxzllkq&#xD;&#xA;ttldqsnineffpplcxmbvknkmtdbzlsix7sbkvqhn77&#xD;&#xA;eightgxzcjvgmtgzc9gndqxbxnsktvp&#xD;&#xA;mpqxldjnfive1pzvxbqqtwonine&#xD;&#xA;gzbczdrqkmtm3lzrhnf&#xD;&#xA;mlbsfqvrrtcrvhjjbs5&#xD;&#xA;fiveljrcn27&#xD;&#xA;bvnxlsfmv6eightnine3rhsb&#xD;&#xA;five5five&#xD;&#xA;eight31zztkhrznmkbx2kvzl4eight&#xD;&#xA;fvccqgfzsqfour453125frz&#xD;&#xA;xxf5threefourtq58&#xD;&#xA;stvfjpj1ggnzgcfzldd2hbxmbgtftpskbtqmgv&#xD;&#xA;11cbcps6&#xD;&#xA;dltxch6onenzsmqbfn4onezkdntjzpc4&#xD;&#xA;4eightthreej7lpqbvzz&#xD;&#xA;sevenlgonexmrmtfhqpfourp7&#xD;&#xA;hjjdgtldrfivednsfdnmn24vtqgxk&#xD;&#xA;41tnjbxk2gghb&#xD;&#xA;2eightwotg&#xD;&#xA;eightkvhkzfivesixtcnpsxssvveight2&#xD;&#xA;59dnmmpone6mzqlnf8dvnone&#xD;&#xA;kfvqrgv87trlninedf&#xD;&#xA;85bnxlhdrmjt&#xD;&#xA;zvzxt4pzlnbb&#xD;&#xA;jfour6lpvvvbdn76tbblfqtwo&#xD;&#xA;lnqpscgkone1&#xD;&#xA;mcnfzmvzkxp1&#xD;&#xA;threeseven9onepvqhgdxcxmhtkxxvlhqrnine&#xD;&#xA;sixrzrjcmbpppcvf1bvbhblrmz&#xD;&#xA;6tzthree7sevenlm9&#xD;&#xA;four3gkqrmpgnjltwo&#xD;&#xA;threetctttrh3&#xD;&#xA;ctcfljkgm7bcphzxzjj7sb43zdkvkddktwo&#xD;&#xA;sixzjkxlfourhqtwonbslgpt9vljz1&#xD;&#xA;sgz5&#xD;&#xA;vrrfjbjpsevenzbqcnthreelhxjqmdd2&#xD;&#xA;sfmjnbnnpvthreedbsh7six5&#xD;&#xA;twovdjqdtrxg5&#xD;&#xA;nineeight7five&#xD;&#xA;4xlpdvlvonekqmqvcqjsevennsd&#xD;&#xA;fiveblbxxjcbhxvnkfd9one7twoninebj&#xD;&#xA;xdxp54sixseventwo&#xD;&#xA;onefive7&#xD;&#xA;ppgsqgjfourfourfivegtbrlkdvs1jl&#xD;&#xA;twotwoeight6sqlmffdm2three&#xD;&#xA;cvszcvq8eight&#xD;&#xA;79three&#xD;&#xA;44fivembtdfivetwones&#xD;&#xA;zqkthreefoureightthreethree2five&#xD;&#xA;74twotwo&#xD;&#xA;six6fnjz1plxb19&#xD;&#xA;mkfj72nine&#xD;&#xA;seven1nine5fourqsgrj&#xD;&#xA;5fntdgbzkjfhxlqrzcq7&#xD;&#xA;six9lgddrhjc9&#xD;&#xA;1zfzp7&#xD;&#xA;2lmncxvxbbsix7jbjrjsnvx1nine&#xD;&#xA;6eightseven3&#xD;&#xA;5vsqhnone&#xD;&#xA;xoneight3j&#xD;&#xA;1gxvbbhfdmsthxgrvnm&#xD;&#xA;sixthreeone13&#xD;&#xA;2three8bzbbd&#xD;&#xA;3dsix1&#xD;&#xA;24kmxnlpqxgpsevenfoursixfour&#xD;&#xA;fqpzqphmczcvlf2mxqvxnfqxthreeone&#xD;&#xA;eight789eightnhsh67&#xD;&#xA;zznxlmhgr3eight&#xD;&#xA;beightwolgnb4997fgx35dt&#xD;&#xA;four1dsgpfzltwo57threefivetwo&#xD;&#xA;xnjjvmlkkgsht99&#xD;&#xA;1sixhhqkx9&#xD;&#xA;eightdhmgqjflthone44eight&#xD;&#xA;9ftzbdsdkd9plrrtwo&#xD;&#xA;vhbvd8h&#xD;&#xA;txxonemsfshdrpc15onefive1four&#xD;&#xA;qgbd4eightrqxlznbjqxmxgmbrnvh7jkd&#xD;&#xA;eighteighttwofive5jsqkgm&#xD;&#xA;89hn&#xD;&#xA;3lzfjpcthreeonenine&#xD;&#xA;hkpc2sixdfldx1&#xD;&#xA;3two72jbxttzfcv&#xD;&#xA;mmkjmmlvcxxvtwo25nine2&#xD;&#xA;8751gphkmsvsjhvkzfc&#xD;&#xA;one8kmcktvzgdninegkl&#xD;&#xA;twokpxphkbjctqdcvf63one3prfive&#xD;&#xA;twotsxhbppfjcpkdfourfiveseven8sixn&#xD;&#xA;3fouronebnclssixfour6eight&#xD;&#xA;cmdgcsix1&#xD;&#xA;2eighttdqsjdrtwolmvpxqgxhd5five&#xD;&#xA;one7ninefivesevenqvpf5xmccsseven&#xD;&#xA;2n7xbptnkxzcninedhhpdcsqkc&#xD;&#xA;5n&#xD;&#xA;1kfv4821&#xD;&#xA;pslpmthreethreeone29tlmgj&#xD;&#xA;sixsevenlhn1&#xD;&#xA;nine9twoqrdgdxxfsevenmjseven&#xD;&#xA;rkrdlnjknine62&#xD;&#xA;f3&#xD;&#xA;6zzrfxdxseventhree&#xD;&#xA;265one&#xD;&#xA;seven3lbcvjxqhhdpzkttqsixjzzjjbclfq1fiveeightwojx&#xD;&#xA;seightwoone8qxcfgszninesvfcnxc68&#xD;&#xA;strqnb5eightbpnkcjdz6&#xD;&#xA;fiveninebtpbpjqbgx2bmjrgmprnd&#xD;&#xA;sixgtxr2fourrdkjg&#xD;&#xA;fivebxsevensixone872dlx">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="91,1431,266,249" Id="PKyk8PC2culNaswYuVac9i">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+            </p:NodeReference>
+            <Pin Id="CptzQmGhDElQEWrC9DQMCr" Name="Force" Kind="InputPin" />
+            <Pin Id="T9dpl6edmuZPUgJS0NIyiI" Name="Dispose Cached Outputs" Kind="InputPin" />
+            <Pin Id="Qqjt84u8jFIMfEt7FRuzc6" Name="Has Changed" Kind="OutputPin" />
+            <Patch Id="LL2Knz13GZjNngtjLalwoL" ManuallySortedPins="true">
+              <Patch Id="KaDsTj7IgQWQAOxAv8FwtZ" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="KM2TTbgcWUQNhfcwyvWT5X" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="143,1492,202,168" Id="Ik3pFVA5TK1OFGK1NhuJgT">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="R4bjW0AYwoXL42rpH2wDAn" Name="Break" Kind="OutputPin" />
+                <Patch Id="DrPHbYJIX7YPr6DYX8t1CM" ManuallySortedPins="true">
+                  <Patch Id="SY90hwJlr1cL1r3ZrR1R0A" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="MJ6sl5njYadLSA6jIf9uyX" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="ShZm3fwcH6nOPstw2BE8xf" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="245,1621,25,19" Id="UQ23rQEqtSANJE15suxh0l">
+                    <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="+" />
+                    </p:NodeReference>
+                    <Pin Id="SgEOZijnVYnL99eobR1rTx" Name="Input" Kind="InputPin" />
+                    <Pin Id="SSpLqnKYHlxLe22Bn2o0vI" Name="Input 2" Kind="InputPin" />
+                    <Pin Id="ULb7lcGcf6FPcz5yLXDJsQ" Name="Output" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="157,1538,175,19" Id="JbF9LSWCNwnNRUAz5OmvvX">
+                    <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 2023 01B Find Numerics In String.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FindSpelledAndRegularDigitsInLine" />
+                    </p:NodeReference>
+                    <Pin Id="FTakXwoFU1MOx8pmCa5vAw" Name="String" Kind="InputPin" />
+                    <Pin Id="C64VB0554WNNAufLOAvPHL" Name="Integer" Kind="OutputPin" />
+                    <Pin Id="UkohnZfkqoFOblOwb9Ym8z" Name="SequencesToCheck" Kind="InputPin" />
+                    <Pin Id="BOjaF54rbnbNcUNpFfLpb8" Name="NumericReplacement" Kind="InputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="QVjJJL887RAN58CwLIVcad" Bounds="159,1498" Alignment="Top" />
+                <ControlPoint Id="E4wORyiq6fKNhOxAtRZYKc" Bounds="266,1498" Alignment="Top" />
+                <ControlPoint Id="FpFRCx1xUV4MHRwCGSR1k8" Bounds="247,1654" Alignment="Bottom" />
+              </Node>
+              <Node Bounds="157,1454,71,19" Id="GSKoXM4bTlaLPvt3E4nfui">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="SplitToLines" />
+                </p:NodeReference>
+                <Pin Id="J6gUMNSJnzhMzaRsZk9JrA" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NHv8F5mUIeELH6gcjDYaSM" Name="Remove Empty Lines" Kind="InputPin" />
+                <Pin Id="EwA9h25vk4JMIkrgAkiwzl" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="EPz2L30HgcdNoMORfH7A4a" Bounds="247,1674" Alignment="Bottom" />
+            <ControlPoint Id="FYdVOWy8jZ1MmD2NzMrMvC" Bounds="159,1437" Alignment="Top" />
+          </Node>
+          <Pad Id="U36vawGeVnLPxyYBlLpJWY" Comment="Force" Bounds="91,1382,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qrlj8wqO1PcPfPnOdr6ybq" Comment="" Bounds="248,1727,128,15" ShowValueBox="true" isIOBox="true" />
+          <!--
+
+    ************************ FindSpelledAndRegularDigitsInLine ************************
+
+-->
+          <Node Name="FindSpelledAndRegularDigitsInLine" Bounds="88,1871,766,623" Id="P8eER0TvlqOL75La1db7Bc">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="HUBOVDp2XhxP6XVV7on8vn">
+              <Pin Id="TxBW5nZQGb6Pqpl2lNDUEF" Name="String" Kind="InputPin" />
+              <ControlPoint Id="SgcFfFS80nmM5IfHMA9pxP" Bounds="183,1890" />
+              <Link Id="ChqeEIAfZDnLqmoaUx9kQe" Ids="TxBW5nZQGb6Pqpl2lNDUEF,SgcFfFS80nmM5IfHMA9pxP" IsHidden="true" />
+              <Pin Id="JN6c2dCY5uFMuXegxsTjld" Name="Integer" Kind="OutputPin" />
+              <ControlPoint Id="Vq0fkSfzgNPQNeUA0v7FvG" Bounds="434,2477" />
+              <Link Id="FjQjkEHBpA3OCAvJv7VuEz" Ids="Vq0fkSfzgNPQNeUA0v7FvG,JN6c2dCY5uFMuXegxsTjld" IsHidden="true" />
+              <Node Bounds="167,1963,127,152" Id="Nd4L8BiB6YbLYZgwgOvxup">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="EhD85n3YxesQQgxwhql68A" Name="Break" Kind="OutputPin" />
+                <Patch Id="RwbS4JmFKxjOXcCKE5Phn2" ManuallySortedPins="true">
+                  <Patch Id="O5PxbH32sSYNMZcdsv2rlY" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="OxxOJeVIUrBPC4P0JZb8EB" Name="Update" ManuallySortedPins="true">
+                    <Pin Id="QuRAMJ0MZlqLX6lhtKdESS" Name="Keep" Kind="OutputPin" />
+                  </Patch>
+                  <Patch Id="PfyhK71pJGIO7WUOD1RhQD" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="180,1991,52,26" Id="TwwOplzarfUN5GU9IQwsq2">
+                    <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="StringType" Name="String" />
+                      <Choice Kind="OperationCallFlag" Name="IndexOf" />
+                    </p:NodeReference>
+                    <Pin Id="G1L7q8JYy2WPJaK631SHxv" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Oqnncv545IGMslZt31xnAY" Name="Value" Kind="InputPin" />
+                    <Pin Id="NBecLbuCDZDMxDj4ucPcIC" Name="Comparison Type" Kind="InputPin" />
+                    <Pin Id="OsNrqmXlBj6PrqZuDqw0qm" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="186,2026,25,19" Id="TbD8X5tAoE5OYKAypMnZaA">
+                    <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="&gt;" />
+                    </p:NodeReference>
+                    <Pin Id="U8nvOomnUgMOYItOIyNmfE" Name="Input" Kind="InputPin" />
+                    <Pin Id="KpAGEkfomnOQD3QMN4V4lK" Name="Input 2" Kind="InputPin" DefaultValue="-1" />
+                    <Pin Id="NQ5cXHuMpZvLffnqQoPvbS" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="RMgAxDBCtoAMgDEMYD5kWL" Comment="IsFound" Bounds="189,2060,35,35" ShowValueBox="true" isIOBox="true" />
+                  <ControlPoint Id="LBkk1E2xMrOLcF1tbCUEyM" Bounds="188,2098" />
+                </Patch>
+                <ControlPoint Id="MNdLZoDXP1FNmYrOJeWvd3" Bounds="210,1969" Alignment="Top" />
+                <ControlPoint Id="PiXkkOPZg3PMerQZB7CUca" Bounds="264,1969" Alignment="Top" />
+                <ControlPoint Id="L4BMHNfOS7QMxpkQ6pIkN1" Bounds="181,2109" Alignment="Bottom" />
+                <ControlPoint Id="GhB4IPlZLnFLb8QJs3ZRde" Bounds="269,2109" Alignment="Bottom" />
+                <ControlPoint Id="KXIUp85jMUNLKLUeLbqaZj" Bounds="227,2109" Alignment="Bottom" />
+              </Node>
+              <Link Id="AL51J8BXshANWS8AuZ4lEE" Ids="MNdLZoDXP1FNmYrOJeWvd3,Oqnncv545IGMslZt31xnAY" />
+              <ControlPoint Id="PkY5vogmuztOUwxCGeUPtc" Bounds="235,1890" />
+              <Link Id="FR3vv1JcbOvLPK2CR6SVVs" Ids="PkY5vogmuztOUwxCGeUPtc,MNdLZoDXP1FNmYrOJeWvd3" />
+              <Pin Id="CXzxWZhYvSEND8Gmd3B8EH" Name="SequencesToCheck" Kind="InputPin" />
+              <Link Id="MiAyGaQrAFsQasCnhmPpo7" Ids="CXzxWZhYvSEND8Gmd3B8EH,PkY5vogmuztOUwxCGeUPtc" IsHidden="true" />
+              <Pin Id="RbgO4tIDACFMZUHsXQwsc3" Name="NumericReplacement" Kind="InputPin" />
+              <ControlPoint Id="DQB0nrWjcVdLQJeAf7Chbx" Bounds="284,1907" />
+              <Link Id="EEJ6SLwK8e9MRDQyO0mR1I" Ids="RbgO4tIDACFMZUHsXQwsc3,DQB0nrWjcVdLQJeAf7Chbx" IsHidden="true" />
+              <Link Id="AYvIysA4ijAOSqGdthRoj3" Ids="DQB0nrWjcVdLQJeAf7Chbx,PiXkkOPZg3PMerQZB7CUca" />
+              <Link Id="S13VMPMv3awNKxTBOFPJvn" Ids="OsNrqmXlBj6PrqZuDqw0qm,U8nvOomnUgMOYItOIyNmfE" />
+              <Link Id="RUV49vAuhkgOQfN690l1d1" Ids="NQ5cXHuMpZvLffnqQoPvbS,RMgAxDBCtoAMgDEMYD5kWL" />
+              <Link Id="H7TRSsGaJ17PXfnWSD6CxK" Ids="LBkk1E2xMrOLcF1tbCUEyM,QuRAMJ0MZlqLX6lhtKdESS" IsHidden="true" />
+              <Link Id="DuW6lgPtB3nP8NluUYRUch" Ids="RMgAxDBCtoAMgDEMYD5kWL,LBkk1E2xMrOLcF1tbCUEyM" />
+              <Link Id="UtAipMMCyIbPKe1pKRFHw9" Ids="OsNrqmXlBj6PrqZuDqw0qm,L4BMHNfOS7QMxpkQ6pIkN1" />
+              <Pad Id="NCjykEztaz8PkzM8pADNgg" Comment="FirstFoundAtPosition" Bounds="181,2149,35,95" ShowValueBox="true" isIOBox="true" />
+              <Link Id="Eq9TMyBeL84LkvamO3Y44a" Ids="L4BMHNfOS7QMxpkQ6pIkN1,NCjykEztaz8PkzM8pADNgg" />
+              <Link Id="Adqikxep6giQA2rxSLpT7r" Ids="PiXkkOPZg3PMerQZB7CUca,GhB4IPlZLnFLb8QJs3ZRde" />
+              <Pad Id="NQrtEVZsTxKLcaw4bFsKpt" Comment="String" Bounds="182,1936,118,15" ShowValueBox="true" isIOBox="true" />
+              <Link Id="Od9IfTSKzyuLSQDdos3OWN" Ids="SgcFfFS80nmM5IfHMA9pxP,NQrtEVZsTxKLcaw4bFsKpt" />
+              <Link Id="GvauVzN2oGwMzykxRYj1Fz" Ids="NQrtEVZsTxKLcaw4bFsKpt,G1L7q8JYy2WPJaK631SHxv" />
+              <Link Id="B0TIhJde9JeNJ4QUrrDB4q" Ids="MNdLZoDXP1FNmYrOJeWvd3,KXIUp85jMUNLKLUeLbqaZj" />
+              <Node Bounds="175,2260,35,19" Id="DCFdb11EeQZQOkd1nM6qTF">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Sort (FormerIndex)" />
+                </p:NodeReference>
+                <Pin Id="QU5qAl4QvyXMXztRAKdjWj" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="TAxpcvECkgqNttBbCJiUTG" Name="Input" Kind="InputPin" />
+                <Pin Id="DEKQVu1wxqHLfgnwFZCsU7" Name="Output" Kind="OutputPin" />
+                <Pin Id="KN9EdbddKN3LaqjMY5nSUZ" Name="Indices" Kind="OutputPin" />
+              </Node>
+              <Link Id="G4W8UdewrLtMxn0awq15L9" Ids="NCjykEztaz8PkzM8pADNgg,TAxpcvECkgqNttBbCJiUTG" />
+              <Node Bounds="207,2287,56,26" Id="BFja3qag5d8MbqqRrpJMm6">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="SplitFirst" />
+                </p:NodeReference>
+                <Pin Id="LdWVyPLNMfvQESUY8gcALG" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Fu5qT64mORhMaUyvDNtGYp" Name="Default Value" Kind="InputPin" />
+                <Pin Id="KPoYxpmy0vsOwgrP6lfQTH" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="MEtr0FabwkuL67LylYGHmj" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Link Id="QVTeZ2LhjfNMkE8j2Wba7T" Ids="KN9EdbddKN3LaqjMY5nSUZ,LdWVyPLNMfvQESUY8gcALG" />
+              <Node Bounds="338,2286,52,19" Id="DeuMUwAF9nLPcQOLs9nEun">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                </p:NodeReference>
+                <Pin Id="DmHS6q5Ia21MLns2ISCNiJ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PTEuep6G6GVOsqBpkuX4tP" Name="Default Value" Kind="InputPin" />
+                <Pin Id="FLyX10CaFntMxH8h6aZbl6" Name="Index" Kind="InputPin" />
+                <Pin Id="VKhknJzdC28LyiWObF0SSd" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Link Id="E36XPCuyuqROUYEhPU4CpK" Ids="MEtr0FabwkuL67LylYGHmj,FLyX10CaFntMxH8h6aZbl6" />
+              <Pad Id="NwVH9XxFpL4Lp2hvwMbjeo" Comment="NumericReplacement" Bounds="347,2148,35,95" ShowValueBox="true" isIOBox="true">
+                <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Spread" />
+                  <p:TypeArguments>
+                    <TypeReference>
+                      <Choice Kind="ImmutableTypeFlag" Name="String" />
+                    </TypeReference>
+                  </p:TypeArguments>
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="FR00y4j5d9kMcT0lSTuxqp" Ids="GhB4IPlZLnFLb8QJs3ZRde,NwVH9XxFpL4Lp2hvwMbjeo" />
+              <Link Id="AsmudZ9yjFhLkEKqum2T8E" Ids="NwVH9XxFpL4Lp2hvwMbjeo,DmHS6q5Ia21MLns2ISCNiJ" />
+              <Pad Id="QIWWRWpWLsMNXTW0l2WkMs" Comment="FirstDigitString" Bounds="339,2327,35,15" ShowValueBox="true" isIOBox="true" />
+              <Link Id="JHak7mxvUq2MyJ2wz8Ecev" Ids="VKhknJzdC28LyiWObF0SSd,QIWWRWpWLsMNXTW0l2WkMs" />
+              <Node Bounds="431,2379,25,19" Id="Dbn5MSXHpyPPbzwe3eIVrx">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="+" />
+                </p:NodeReference>
+                <Pin Id="BhXDCxIEBc7MWU7WKluFQr" Name="Input" Kind="InputPin" />
+                <Pin Id="PpDapq2A8IAOq4brTfEE10" Name="Input 2" Kind="InputPin" />
+                <Pin Id="NKjU9SO576yM6Wi3L9KR1z" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="B1W8v92IX0VNLoLTbqqUdx" Ids="QIWWRWpWLsMNXTW0l2WkMs,BhXDCxIEBc7MWU7WKluFQr" />
+              <ControlPoint Id="B1cTuJrzbghLjc7YGVdtvv" Bounds="525,1889" />
+              <Node Bounds="509,1962,127,152" Id="FhVsJNGD5zfOMM940HwX6P">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="UNbX76dy4NDNvAF1YLS7RG" Name="Break" Kind="OutputPin" />
+                <Patch Id="J5fyFKoznoXOfHwIPf1wSV" ManuallySortedPins="true">
+                  <Patch Id="BjfhmH6kyglMyBR0qoKpV5" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="UGPL8UrxDMpPS9HBBpQDp0" Name="Update" ManuallySortedPins="true">
+                    <Pin Id="O7086drgRnHPCfI1ZxIMZL" Name="Keep" Kind="OutputPin" />
+                  </Patch>
+                  <Patch Id="BGTJdXaibOOMRAy21LHMCm" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="522,1990,71,26" Id="NzrQS3Y9W0gNMDe1FwmOc5">
+                    <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="StringType" Name="String" />
+                      <Choice Kind="OperationCallFlag" Name="LastIndexOf" />
+                    </p:NodeReference>
+                    <Pin Id="R73Wa85qvBONurcNxaNx7K" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Npbwjd9JKWpN7KdoUQprlf" Name="Value" Kind="InputPin" />
+                    <Pin Id="LszkEJNFxYpNbdlUNNXnCk" Name="Comparison Type" Kind="InputPin" />
+                    <Pin Id="QqamSnDvcvgNAhpRu724WX" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="528,2025,25,19" Id="UwidhOSpNyeLT7BN8vN2sH">
+                    <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="&gt;" />
+                    </p:NodeReference>
+                    <Pin Id="GF7aaRPB6MvLoWROmVfmfN" Name="Input" Kind="InputPin" />
+                    <Pin Id="NKIsYHPzXB4NR0GFqMUpra" Name="Input 2" Kind="InputPin" DefaultValue="-1" />
+                    <Pin Id="Ghwz9mQhbYVLw4rcneAPxa" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="ISjD7CGmd8XP61xeJXqcQz" Comment="IsFound" Bounds="531,2059,35,35" ShowValueBox="true" isIOBox="true" />
+                  <ControlPoint Id="SENGVeAFbvlLrtGVfCavPZ" Bounds="530,2097" />
+                </Patch>
+                <ControlPoint Id="SK61qUspvGgOk0TujJmBhj" Bounds="552,1968" Alignment="Top" />
+                <ControlPoint Id="Klqw6VsX4SnLmwvFzXFyXP" Bounds="606,1968" Alignment="Top" />
+                <ControlPoint Id="AmyJT0ThQM7LYopEningQA" Bounds="523,2108" Alignment="Bottom" />
+                <ControlPoint Id="GiaRlejxz9TL8NNpRYAg07" Bounds="611,2108" Alignment="Bottom" />
+                <ControlPoint Id="L7DAc4wQvIeMKBAS4h4kFg" Bounds="569,2108" Alignment="Bottom" />
+              </Node>
+              <ControlPoint Id="K1lYkfJkEXOMZeI0pxug1v" Bounds="577,1889" />
+              <ControlPoint Id="UwRF2la7OD0MkAkfqUv5Va" Bounds="626,1906" />
+              <Pad Id="OmXOEy3uYVWO7HlkhkK2yd" Comment="LastFoundAtPosition" Bounds="523,2148,35,95" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="TX6pucmPul3ORGy95g1glz" Comment="String" Bounds="524,1935,118,15" ShowValueBox="true" isIOBox="true" />
+              <Node Bounds="518,2245,35,19" Id="JAT6HOoAC8wOGP7CKcQaiF">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Sort (FormerIndex)" />
+                </p:NodeReference>
+                <Pin Id="LI1h2lQ9p6kLLYV4NKd5uG" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="MDcCPXUu7r8NfKiGGmXoRS" Name="Input" Kind="InputPin" />
+                <Pin Id="TeLjs4IWWXSPrjGt9TcPYP" Name="Output" Kind="OutputPin" />
+                <Pin Id="TnOuWSds1TsMryPfXxYvPz" Name="Indices" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="680,2285,52,19" Id="Lai0ohNlhBBLhXb93FWcqd">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                </p:NodeReference>
+                <Pin Id="Qlp26tzVpZtOipVAsTG5Ty" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Cy8zFHz4lOEMzguo56xYsq" Name="Default Value" Kind="InputPin" />
+                <Pin Id="BEdzy06r9vlNvhpwcPROPF" Name="Index" Kind="InputPin" />
+                <Pin Id="TBP2h5w85hiNvJdfli1bdZ" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Pad Id="TbMhpucOAMWLRJHqXl0XOt" Comment="NumericReplacement" Bounds="689,2147,35,95" ShowValueBox="true" isIOBox="true">
+                <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Spread" />
+                  <p:TypeArguments>
+                    <TypeReference>
+                      <Choice Kind="ImmutableTypeFlag" Name="String" />
+                    </TypeReference>
+                  </p:TypeArguments>
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="SjPGND3a9YELQeygAdt4Oj" Comment="LastDigitString" Bounds="681,2326,35,15" ShowValueBox="true" isIOBox="true" />
+              <Link Id="RsXE1c0E6jKLseM3WIYWls" Ids="TxBW5nZQGb6Pqpl2lNDUEF,B1cTuJrzbghLjc7YGVdtvv" IsHidden="true" />
+              <Link Id="BqUFu3NBRyDLDnyiChPGX6" Ids="SK61qUspvGgOk0TujJmBhj,Npbwjd9JKWpN7KdoUQprlf" />
+              <Link Id="J7YVxsVZKeRNBezTTxLgzo" Ids="K1lYkfJkEXOMZeI0pxug1v,SK61qUspvGgOk0TujJmBhj" />
+              <Link Id="IZYYmTkEkzYNjKoSXB0TVp" Ids="CXzxWZhYvSEND8Gmd3B8EH,K1lYkfJkEXOMZeI0pxug1v" IsHidden="true" />
+              <Link Id="HTi1zkAoICuOTMPkZIUcaV" Ids="RbgO4tIDACFMZUHsXQwsc3,UwRF2la7OD0MkAkfqUv5Va" IsHidden="true" />
+              <Link Id="AfTFHWlBAWoLR59aYgIQ9Y" Ids="UwRF2la7OD0MkAkfqUv5Va,Klqw6VsX4SnLmwvFzXFyXP" />
+              <Link Id="Gx5U4UUIIXXMDzM4XBdBgX" Ids="QqamSnDvcvgNAhpRu724WX,GF7aaRPB6MvLoWROmVfmfN" />
+              <Link Id="K2ekZ0zGG7sMU0EhzehMQP" Ids="Ghwz9mQhbYVLw4rcneAPxa,ISjD7CGmd8XP61xeJXqcQz" />
+              <Link Id="C4bYQiF2G07NtEr0v19vH1" Ids="SENGVeAFbvlLrtGVfCavPZ,O7086drgRnHPCfI1ZxIMZL" IsHidden="true" />
+              <Link Id="BOr1VK9Z2H0LOgxyoYCDnW" Ids="ISjD7CGmd8XP61xeJXqcQz,SENGVeAFbvlLrtGVfCavPZ" />
+              <Link Id="IsVoglTeZmVPQl7DsPkXyH" Ids="QqamSnDvcvgNAhpRu724WX,AmyJT0ThQM7LYopEningQA" />
+              <Link Id="BoBDFcDHNouPSwl9VTJchj" Ids="AmyJT0ThQM7LYopEningQA,OmXOEy3uYVWO7HlkhkK2yd" />
+              <Link Id="UvVdv46BXIgPlup4t3KqpK" Ids="Klqw6VsX4SnLmwvFzXFyXP,GiaRlejxz9TL8NNpRYAg07" />
+              <Link Id="N0ELfWfRrTWPWhZz5ujwbI" Ids="B1cTuJrzbghLjc7YGVdtvv,TX6pucmPul3ORGy95g1glz" />
+              <Link Id="L7vzzb0c86PMOhNe7icILm" Ids="TX6pucmPul3ORGy95g1glz,R73Wa85qvBONurcNxaNx7K" />
+              <Link Id="AdhwgKOKHopLARWOnRQlyT" Ids="SK61qUspvGgOk0TujJmBhj,L7DAc4wQvIeMKBAS4h4kFg" />
+              <Link Id="FxJ78964UA5PoRr64j1vOZ" Ids="OmXOEy3uYVWO7HlkhkK2yd,MDcCPXUu7r8NfKiGGmXoRS" />
+              <Link Id="Gb4zlltftjoOBYkGXPD6xX" Ids="GiaRlejxz9TL8NNpRYAg07,TbMhpucOAMWLRJHqXl0XOt" />
+              <Link Id="DOzqUcwhulkL3E0Wi4QD8O" Ids="TbMhpucOAMWLRJHqXl0XOt,Qlp26tzVpZtOipVAsTG5Ty" />
+              <Link Id="LHZJsCO92yWNo8bMut9rIn" Ids="TBP2h5w85hiNvJdfli1bdZ,SjPGND3a9YELQeygAdt4Oj" />
+              <Node Bounds="550,2277,55,26" Id="CVbNpd0dvQyO4TMiVxA8nP">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="SplitLast" />
+                </p:NodeReference>
+                <Pin Id="DixDLL5heFvMOFtsWnrWHf" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UWRiZOIRjBENOHDB9lLOVh" Name="Default Value" Kind="InputPin" />
+                <Pin Id="I6dHmcOwdMTPMyB8xoCObO" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="F8PJvFjaRxrMsvZmnMc0Op" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Link Id="NUaI2AFGvYiMC2yp857N0r" Ids="TnOuWSds1TsMryPfXxYvPz,DixDLL5heFvMOFtsWnrWHf" />
+              <Link Id="EAC4Y9seN1PMDpTfX0pySG" Ids="F8PJvFjaRxrMsvZmnMc0Op,BEdzy06r9vlNvhpwcPROPF" />
+              <Link Id="VB5hRwFLxkNQX82lXeAPY2" Ids="SjPGND3a9YELQeygAdt4Oj,PpDapq2A8IAOq4brTfEE10" />
+              <Node Bounds="431,2407,55,19" Id="Vo4hspxLUxBLWhoYwSwVbu">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="TryParse" />
+                </p:NodeReference>
+                <Pin Id="GpGYv1AJfYkOErkAvK1EXd" Name="String" Kind="InputPin" />
+                <Pin Id="JumM6RJDbUqMxNzdIPdSQI" Name="Value" Kind="OutputPin" />
+                <Pin Id="LPjWauMRfkaOToOvGHPqEF" Name="Success" Kind="OutputPin" />
+              </Node>
+              <Link Id="Cucaye4PsokMIjPHqz0TqY" Ids="NKjU9SO576yM6Wi3L9KR1z,GpGYv1AJfYkOErkAvK1EXd" />
+              <Pad Id="KbS4rmRBr8FPS1FcuhNk3g" Comment="" Bounds="433,2445,35,15" ShowValueBox="true" isIOBox="true">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="BK0aaxvVQeUNUbumxuMto0" Ids="JumM6RJDbUqMxNzdIPdSQI,KbS4rmRBr8FPS1FcuhNk3g" />
+              <Link Id="LAeF0QTcBzaQY2rwpuF2Rh" Ids="KbS4rmRBr8FPS1FcuhNk3g,Vq0fkSfzgNPQNeUA0v7FvG" />
+              <Pad Id="FRhQFF2ug6nLyw00r7iFC7" Bounds="104,2000,35,29" ShowValueBox="true" isIOBox="true" Value="3.">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">14</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="OWkqtlXvZuoNWN1CYJV1lB" Bounds="104,2166,35,29" ShowValueBox="true" isIOBox="true" Value="4.">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">14</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="PIQLIcLbGu0PoPLIE3FB0a" Bounds="104,2273,35,29" ShowValueBox="true" isIOBox="true" Value="5.">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">14</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="TCbKg45PTxAL9AUCda4gqT" Bounds="450,1994,35,29" ShowValueBox="true" isIOBox="true" Value="6.">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">14</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="SDkJelUmVW1N7GsSEV4Jgi" Bounds="379,2396,35,29" ShowValueBox="true" isIOBox="true" Value="7.">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">14</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+            </Patch>
+          </Node>
+          <Pad Id="KhHaa2eKTjsMC3R6uOYrUt" Comment="SequencesToCheck" Bounds="399,1370,35,325" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">20</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item>0</Item>
+              <Item>1</Item>
+              <Item>2</Item>
+              <Item>3</Item>
+              <Item>4</Item>
+              <Item>5</Item>
+              <Item>6</Item>
+              <Item>7</Item>
+              <Item>8</Item>
+              <Item>9</Item>
+              <Item>zero</Item>
+              <Item>one</Item>
+              <Item>two</Item>
+              <Item>three</Item>
+              <Item>four</Item>
+              <Item>five</Item>
+              <Item>six</Item>
+              <Item>seven</Item>
+              <Item>eight</Item>
+              <Item>nine</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="DkFGv6sWIKxOQryKS1245v" Comment="DigitStringReplacement" Bounds="548,1369,35,325" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">20</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item>0</Item>
+              <Item>1</Item>
+              <Item>2</Item>
+              <Item>3</Item>
+              <Item>4</Item>
+              <Item>5</Item>
+              <Item>6</Item>
+              <Item>7</Item>
+              <Item>8</Item>
+              <Item>9</Item>
+              <Item>0</Item>
+              <Item>1</Item>
+              <Item>2</Item>
+              <Item>3</Item>
+              <Item>4</Item>
+              <Item>5</Item>
+              <Item>6</Item>
+              <Item>7</Item>
+              <Item>8</Item>
+              <Item>9</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="AwQCRLSVV8bMCDjSeIMsQ2" Bounds="475,1327,35,29" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MJ4GXnYOicDOIhIDbEpIb5" Bounds="113,1455,35,29" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JHSlB7ArFhoO6PMs4hLgoS" Bounds="194,1619,35,29" ShowValueBox="true" isIOBox="true" Value="8.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="DS1yMN7LKOGNsXvsSyXyBG" Name="Create" ParticipatingElements="TbnmhYsNBPRQc3OtVjqGLz" />
+        <Patch Id="I9Jqo84JxPiPYOfeOk7RdT" Name="Update" />
+        <ProcessDefinition Id="Bab4Z5ifJ9SQQ7nlBKMoi3">
+          <Fragment Id="Vm10oGwTO7bM9ERAKeJ91M" Patch="DS1yMN7LKOGNsXvsSyXyBG" Enabled="true" />
+          <Fragment Id="FA3oAL9XViGNnd6CDs4Le2" Patch="I9Jqo84JxPiPYOfeOk7RdT" Enabled="true" />
+          <Fragment Id="GOozManrLLZMT20cuHlPIj" Patch="CKMoqT58poeMELnR4x5EBN" />
+          <Fragment Id="Cy74mWiGEncNAy7yGqKz5e" Patch="AqDud3zikqNLnAu4xlTmBt" />
+          <Fragment Id="OHaf6nkbVODNBqL8DjwKm1" Patch="Ixh6urRrHeRLcVG0D8wNC0" />
+          <Fragment Id="KvbHnKYfhRgP6L1YgRz4BN" Patch="P8eER0TvlqOL75La1db7Bc" />
+        </ProcessDefinition>
+        <Link Id="SPJlE2VjlPcNVrT9LpRm7E" Ids="PBpJnH8epWiNAMVOEyVsLf,Awj8xRsdyjVQQhKmIHeklY" />
+        <Slot Id="OlN45QiU8CaNBuf88doGFK" Name="DigitChars" />
+        <Link Id="TbnmhYsNBPRQc3OtVjqGLz" Ids="DLocBm1sxhRP5yirsAjaaN,FJJCPODdZbZPfdi2pdqmBM" />
+        <Link Id="H0mYfrTuCEoQPGGwpCXtOk" Ids="FJJCPODdZbZPfdi2pdqmBM,ABcxjHc3VKlPCBNhUlT6Xa" />
+        <Link Id="VVLDfsfhYmIQCEfRbOVrVD" Ids="GXsYJfpVRsWNtgRvbjq5sc,ITeEag99eixOhIodFCzCs0" IsFeedback="true" />
+        <Link Id="TKmj1vLRPIQOSndRcJvBKG" Ids="GXsYJfpVRsWNtgRvbjq5sc,CiFuSPZbOf0MUKG3gt9OAj" />
+        <Link Id="L0kAfwAnXm1MksZ8ewCgQR" Ids="PvGJiZOHSvRP03xEzBWYzZ,ITeEag99eixOhIodFCzCs0" />
+        <Link Id="J1EzKSQy66hQLjrHMv4hor" Ids="FWB6SuE0W35ODr44vSlFdy,SmiTydDS7R2NOAkMuSS136" />
+        <Link Id="MaJbyrYclKAOzGTkUIGM1S" Ids="ITeEag99eixOhIodFCzCs0,KSa0MtCCnNQPoF4CKzK1W5" />
+        <Link Id="UehOhR11pkeLF4Qj0GzYJt" Ids="KSa0MtCCnNQPoF4CKzK1W5,ELDrGiAH69XMhJB1ktrsxk" />
+        <Link Id="Ef9PkTd2WbmL0ULnK3zlSV" Ids="TBQYC81rMZXLe4a25efjEA,Op2SyQUwbGiMoQYN7eHMtg" />
+        <Link Id="KdY9NvvwQj4N4lAi1NmzPK" Ids="PhZ7Ujre83lMTkkLG2mSTJ,JwNjPGwQoPCNY6zbyy6IQk" />
+        <Link Id="L16Ev6014JoOSaWlwNQUik" Ids="As8gGYizzrPN3mo9fSPd9V,TBQYC81rMZXLe4a25efjEA" />
+        <Link Id="Hj8Uqi0CkJeOC1ShzWCB2Z" Ids="PhZ7Ujre83lMTkkLG2mSTJ,Km1VI7XKBpbK95bPB7Kh4e" />
+        <Link Id="FqPLr9ldz3hL2dcZQNXKUW" Ids="OYQG64j8Qh5MsIOQyqtXth,NaX8NIKITuxOmUIANe57Fx" />
+        <Link Id="B3GaLyJivKgPIbA0YO4XAk" Ids="JwNjPGwQoPCNY6zbyy6IQk,EOqO1SmZEK5MDJFWsbe1ya" />
+        <Link Id="Kanq1e4HBCGNn5uwKYvuZO" Ids="Miu8SMd7PhWNP35M6JLRVw,Ajwu6SqM8orMUbCZzpynMB" />
+        <Link Id="JNqlDdvbEWpPg5G7jjN8oj" Ids="LcnSFiFx4O4PPCQppwC0El,MFCmhZA22g5NRJ4ESnDDeU" />
+        <Link Id="JgdqDD3Pu2kMwDCgYTNrJT" Ids="Miu8SMd7PhWNP35M6JLRVw,V67SwTjUR9IMwkq9ohPreK" />
+        <Link Id="Ke3YUV2Xrv2OdLYxYbSOC0" Ids="Miu8SMd7PhWNP35M6JLRVw,REhqeZ0IjFrOXdVs4wFOV7" />
+        <Link Id="M8VxLSdLpVbM9Vc2MJkqa1" Ids="REhqeZ0IjFrOXdVs4wFOV7,SqmkSsgmUNHPQjMvN1qs5z" />
+        <Link Id="JDow6jS81pkP4dG50qWgEb" Ids="SqmkSsgmUNHPQjMvN1qs5z,V0DvpkeFgLtLEQ4uu1MFOT" />
+        <Link Id="UrzbWrQlGPOQdaP72HFQvV" Ids="E4wORyiq6fKNhOxAtRZYKc,FpFRCx1xUV4MHRwCGSR1k8" IsFeedback="true" />
+        <Link Id="HpB48DDOWrjQXGoBUtVjWk" Ids="E4wORyiq6fKNhOxAtRZYKc,SSpLqnKYHlxLe22Bn2o0vI" />
+        <Link Id="MnbIYS19VgEN06DnAs4SHa" Ids="ULb7lcGcf6FPcz5yLXDJsQ,FpFRCx1xUV4MHRwCGSR1k8" />
+        <Link Id="UBuzNIlRUewNazabllfnc2" Ids="FpFRCx1xUV4MHRwCGSR1k8,EPz2L30HgcdNoMORfH7A4a" />
+        <Link Id="Db1wZKonNscMHCgLFEAPDY" Ids="FYdVOWy8jZ1MmD2NzMrMvC,J6gUMNSJnzhMzaRsZk9JrA" />
+        <Link Id="ANkMobQnt6YNiKvBhYwlY1" Ids="U36vawGeVnLPxyYBlLpJWY,CptzQmGhDElQEWrC9DQMCr" />
+        <Link Id="S6Lb5O90rJ3NYGIAOlkrKc" Ids="EPz2L30HgcdNoMORfH7A4a,Qrlj8wqO1PcPfPnOdr6ybq" />
+        <Link Id="II4MtD4oHQtLLFk0mJaedk" Ids="QVjJJL887RAN58CwLIVcad,FTakXwoFU1MOx8pmCa5vAw" />
+        <Link Id="TCsaBHQlEc7N7uhMoyh4b9" Ids="KhHaa2eKTjsMC3R6uOYrUt,UkohnZfkqoFOblOwb9Ym8z" />
+        <Link Id="DNsiLbfNlX0NUml9mzusjn" Ids="DkFGv6sWIKxOQryKS1245v,BOjaF54rbnbNcUNpFfLpb8" />
+        <Link Id="KkGODWOeEiLOpLle1b7rBX" Ids="C64VB0554WNNAufLOAvPHL,SgEOZijnVYnL99eobR1rTx" />
+        <Link Id="BOkXYwHbBZiN4AaMcRPrUe" Ids="EwA9h25vk4JMIkrgAkiwzl,QVjJJL887RAN58CwLIVcad" />
+        <Link Id="Tvr7uf042DQL2cYNOmAEDx" Ids="MUVrdlKf8CaOgaX4SWorfs,FYdVOWy8jZ1MmD2NzMrMvC" />
+      </Patch>
+    </Node>
+  </Patch>
+</Document>
